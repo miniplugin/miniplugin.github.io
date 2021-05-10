@@ -1,5 +1,4 @@
 #### 20210510(월) 작업내역
-
 - Git에서 'user.name' 및 'user.email'을 구성하라고 떠요!(해결책)
 - git config --local user.name 이름
 - git config --local user.email 이메일
