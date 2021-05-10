@@ -1,9 +1,12 @@
 #### 20210510(월) 작업내역
 - 개발PC(html) 와 깃 저장소와 연결시킵니다. 초기에 연결시 아래와 같은 문제점이 나올 수 있습니다.
 - 레포지토리(저장소) 초기화: git init 또는 VS code에서 레포지토리초기화 버튼 이후
-- Git에서 'user.name' 및 'user.email'을 구성하라고 떠요!(해결책)
+- Git에서 'user.name' 및 'user.email'을 구성하라고 떠요!(해결책 아래 2줄)
 - git config --local user.name 이름
 - git config --local user.email 이메일
+- 브랜치(branch)가 없다며 구성하라고 떠요!(해결책 아래 1줄)
+- git branch -M master
+- 리모트(remote)가 없다며 구성하라고 떠요!(해결책 아래1줄)
 - git git remote add origin https://github.com/사용자저장소/사용자저장소.git
 - 작업결과는 .git 폴더안의 config 파일에 저장됩니다.
 - 이후 VS code 프로그램에서 아래 처럼 작업 하시면 됩니다.
