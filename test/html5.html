@@ -10,6 +10,11 @@
             border: 1px solid black;
             font-size: 13px;
         }
+        /* style의 주석 Ctrl+/키 조합 */
+        /* 테이블태그의 테두리 이중선 1개선으로 병합 */
+        table {
+            border-collapse: collapse;
+        }
     </style>
 </head>
 <body>
@@ -28,15 +33,21 @@
             <td>1</td>
             <td>HTML</td>
             <td>7,000</td>
-            <td>1,000</td>
+            <td rowspan="2">1,000</td>
+            <!-- rowspan 세로칸을 병합 -->
             <td>7,000,000</td>
         </tr>
         <tr>
             <td>2</td>
             <td>JS</td>
             <td>7,000</td>
-            <td>1,000</td>
+            <!-- <td>1,000</td> -->
             <td>7,000,000</td>
+        </tr>
+        <tr>
+            <td colspan="4">합계</td>
+            <!-- colspan 가로칸 병합 -->
+            <td>14,000,000</td>
         </tr>
     </table>
     <!-- html5 폼 태그 사용 엘리먼트:form태그,input태그 -->
