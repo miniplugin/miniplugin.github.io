@@ -15,19 +15,71 @@
         table {
             border-collapse: collapse;
         }
+        
     </style>
 </head>
 <body>
+    <!-- HTML5레이아웃 구조에 사용된 태그
+    header, nav, section, article, aside, footer
+    -->
+    <style>
+        /* css: cascade style sheet 계층형 스타일 표 */
+        header, nav, section, aside, footer {
+            border:1px dotted black;
+        }
+        header > h1, footer > h1 { text-align: center; }
+        nav { display: block; height: 60px; }
+        nav > ul > li {
+            float:left; margin-right:20px;
+        }
+        div#contents { vertical-align: middle; }
+        div.contents {
+             /* 내부의 컨텐츠 기준되는 외부 요소에 관계형 포지션 추가   */
+            position: relative;
+        }
+        section { 
+            width: 50%; display: inline-block;
+            }
+        aside { 
+            width: 40%; display: inline-block;
+            height: 100%;
+            position:absolute;
+            }
+    </style>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">menu1</a> </li>
+            <li><a href="#">menu2</a> </li>
+            <li><a href="#">menu3</a> </li>
+        </ul>
+    </nav>
+    <div class="contents">
+        <section>
+            <h1>section</h1>
+            <article>
+                <h1>article</h1>
+            </article>
+        </section>
+        <aside>
+            <h1>aside</h1>
+        </aside>
+    </div>
+    <footer>
+        <h1>footer</h1>
+    </footer>
     <!-- 테이블 태그 제어: 셀병합 
     table, tr(table row줄), td(table data칸)
     -->
     <table>
         <tr>
-            <td>순번</td>
-            <td>책이름</td>
-            <td>가격</td>
-            <td>판매량</td>
-            <td>판매액</td>
+            <th>순번</th>
+            <th>책이름</th>
+            <th>가격</th>
+            <th>판매량</th>
+            <th>판매액</th>
         </tr>
         <tr>
             <td>1</td>
