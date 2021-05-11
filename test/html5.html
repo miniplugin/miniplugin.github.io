@@ -35,13 +35,19 @@
         div.contents {
              /* 내부의 컨텐츠 기준되는 외부 요소에 관계형 포지션 추가   */
             position: relative;
+            overflow: hidden;
         }
         section { 
             width: 79%; display: inline-block;
             }
+        section > article { 
+            margin: 10px 30px; 
+            border:1px solid skyblue;
+            }
         aside { 
             width: 20%; display: inline-block;
             height: 100%;
+            right:0px;
             position:absolute;
             }
     </style>
@@ -59,7 +65,10 @@
         <section>
             <h1>section</h1>
             <article>
-                <h1>article</h1>
+                <h1>article1</h1>
+            </article>
+            <article>
+                <h1>article2</h1>
             </article>
         </section>
         <aside>
