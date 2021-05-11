@@ -13,8 +13,54 @@
     </style>
 </head>
 <body>
-    <!-- 유튜브영상 집어넣기 -->
-    <iframe width="1060" height="605" src="https://www.youtube.com/embed/uL6PjAj4q74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- 테이블 태그 제어: 셀병합 
+    table, tr(table row줄), td(table data칸)
+    -->
+    <table>
+        <tr>
+            <td>순번</td>
+            <td>책이름</td>
+            <td>가격</td>
+            <td>판매량</td>
+            <td>판매액</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>HTML</td>
+            <td>7,000</td>
+            <td>1,000</td>
+            <td>7,000,000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>JS</td>
+            <td>7,000</td>
+            <td>1,000</td>
+            <td>7,000,000</td>
+        </tr>
+    </table>
+    <!-- html5 폼 태그 사용 엘리먼트:form태그,input태그 -->
+    <!-- 액션-자료전송(메서드:방법), radio(file), submit -->
+    <form action="https://naver.com" method="GET">
+        <input type="text" name="text" id="">
+        <input type="password" name="password" id="">
+        <input type="date" name="date" id="">
+        <input type="color" name="color" id="">
+        <input type="radio" name="radio" id="">
+        <input type="radio" name="radio" id="">
+        <!-- 라디오버튼은 2이상중에 1개만 선택, name이 같음 -->
+        <input type="checkbox" name="checkbox1" id="">
+        <input type="checkbox" name="checkbox2" id="">
+        <!-- 체크박스 2이상중에 2개이상선택가능, name이 트림 -->
+        <input type="file" name="file" id="">
+        <input type="file" name="file" id="">
+        <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+        <input type="button" value="버튼">
+        <input type="reset" value="입력취소">
+        <input type="submit" value="서밋">
+    </form>
+    <!-- 유튜브영상 집어넣기 iframe -->
+    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/WVt_6s7CkM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <!-- 컨텐츠 경로 .은 현재폴더의 상대경로, 절대경로 -->
     <img style="width: 100%;" src="./img/tree.jpg" alt="엑박일때 표시할 내용이 여기에">
     <img style="width: 100%;" src="/test/img/tree.jpg" alt="엑박일때 표시할 내용이 여기에">
