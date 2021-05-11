@@ -5,17 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5실습</title>
+    <style>
+        table, tr, th, td {
+            border: 1px solid black;
+            font-size: 13px;
+        }
+    </style>
 </head>
 <body>
+    <!-- 유튜브영상 집어넣기 -->
+    <iframe width="1060" height="605" src="https://www.youtube.com/embed/uL6PjAj4q74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- 컨텐츠 경로 .은 현재폴더의 상대경로, 절대경로 -->
+    <img style="width: 100%;" src="./img/tree.jpg" alt="엑박일때 표시할 내용이 여기에">
+    <img style="width: 100%;" src="/test/img/tree.jpg" alt="엑박일때 표시할 내용이 여기에">
+    <!-- 영역지정 div : division, 가상링크 #으로생성 -->
+    <div style="background-color: rgb(111, 138, 189);">
+        <a href="#">네이버</a>
+        <a href="#">다음</a>
+        <a href="#">네이트</a>
+    </div>
+    <!-- 리스트형 2가지: ol(Ordered List 정렬된 리스트), ul(Unordered List 비정렬) -->
+    <ol type="i">
+        <li>헬로 html</li>
+        <li>헬로 html</li>
+        <li>헬로 html</li>
+        <li>헬로 html</li>
+    </ol>
+    <ul>
+        <li>헬로 html</li>
+        <li>헬로 html</li>
+        <li>헬로 html</li>
+    </ul>
+    <!-- H2O, X2 아래첨자,위첨자 로 보이게 -->
+    <p>H<sub>2</sub>O</p>
+    <p>X<sup>2</sup>=4</p>
+    <!-- 로렘 입숨(립숨)은 작업공간에 채울내용을 자동으로 생성해 주는 기능 -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id consectetur purus. Purus sit amet luctus venenatis lectus magna fringilla urna porttitor. Non consectetur a erat nam at lectus urna duis. Luctus accumsan tortor posuere ac ut consequat semper viverra. Ac turpis egestas sed tempus urna et. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae. Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Hendrerit gravida rutrum quisque non tellus orci ac. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Elementum integer enim neque volutpat ac tincidunt vitae. Lobortis elementum nibh tellus molestie nunc. Curabitur gravida arcu ac tortor.</p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>탄핵결정은 공직으로부터 파면함에 그친다....</td>
+                <td>정약용</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>한 회계연도를 넘어 계속하여 지출할 필요...</td>
+                <td>곽재우</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>모든 국민은 헌법과 법률이 정한 법관에 의...</td>
+                <td>방정환</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>국회는 법률에 저촉되지 아니하는 범위안에...</td>
+                <td>성삼문</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>대통령으로 선거될 수 있는 자는 국회의원...</td>
+                <td>이이</td>
+            </tr>
+        </tbody>
+        </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, natus aliquid earum officiis quaerat iure reiciendis iusto nesciunt quo voluptatem asperiores dolorum eum rem ut consectetur perspiciatis. Atque, doloremque veniam.</p>
     <!-- html:5콜론, ;세미콜론 -->
     <!-- h헤더태그 약자 글 제목에 표시 -->
     <!-- p태그는 문단의약자(Paragraph) -->
     <!-- 줄바꿈이 이루어지는 영역태그를 블럭영역 -->
     <!-- 줄바꿈이 이루어지지 않는 영역은 인라인블럭영역=span -->
     <!-- 도메인(사람이확인) == IP주소(컴퓨터시스템) -->
+    <!-- 매칭(묶어줌) = 바인딩(묶어줌) -->
     <!-- 사람색상(color) : red, blue, skyblue, black -->
-    <!--  -->
-    <span style="color: #4e01a3;">헬로 html5</span>
+    <!-- 컴퓨터색상(color): #ff(red)-00(green)-00(blue): 
+        예, 흰색: #ffffff = #fff = white = 함수 rgb(255, 255, 255);
+        #16진수: 빛의 3가지 색상(3원색) 빛은 더하면 흰색으로 변함.
+        참고로, 물감은 더하면 검은색으로 변함.
+    -->
+    <!-- 16진수: 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f = 총16개 -->
+    <span style="color: rgb(255, 255, 0);">헬로 html5</span>
     <span>헬로 html5</span>
     <hr>
     <br>
