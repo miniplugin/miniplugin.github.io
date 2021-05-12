@@ -27,6 +27,29 @@
     </table>
     <div id="one">헬로 자바스크립트</div>
     <script>
+        // 내장함수란? 아래 사용자가 만든 더하기plus함수가 아닌,
+        // 웹브라우저 내장 함수: 자바스크립트는 웹브라우저에 내장된 언어
+        // 내장 함수들을 내장함수라고 합니다.
+        var txt = 'Kimilguk is Javascript';
+        var num = 10;
+        document.write(txt.length);//문자열의 길이를 반환(리턴)
+        document.write('<br>');
+        document.write(txt.indexOf('is'));//찾은문자열의 index위치 리턴
+        document.write('<br>');
+        document.write(txt.slice(0,7));//(시작,끝위치)기준 문자열 슬라이스
+        //7이면 7-1까지 나옵니다.== 7미만
+        document.write('<br>');
+        document.write(txt.replace('is','는'));//('찾을문자','바꿀문자')
+        document.write('<br>');
+        document.write(txt.toUpperCase());//대문자로 변경
+        document.write('<br>');
+        document.write(txt.toLowerCase());//소문자로 변경
+        // 데이터를 파싱Parsing 한다고 합니다.
+        document.write('<br>');
+        document.write(num.toFixed(6));//숫자자를 파싱 소수점 이하를 6자리로
+        document.write('<br>');
+        document.write(num.toString()+num.toString());
+        document.write('<hr>');//수평선태그 horizontal
         // 함수형 변수 사용
         // 기본함수 형태 function 함수명(파라미터1,파리미터2) {구현내용}
         var plus = function(x,y) { 
