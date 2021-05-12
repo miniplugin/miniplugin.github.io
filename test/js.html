@@ -27,6 +27,25 @@
     </table>
     <div id="one">헬로 자바스크립트</div>
     <script>
+        // 인터넷 자료교환 대량 데이터형식: xml 태그 데이터 방식
+        // 지금은 json(JavaScript Object Notation) 자바스크립트 객체 표시
+        var human = {
+            name:{
+                firstname:'김',
+                lastname:'일국'
+            },           //object(배열)
+            age:10,      //number
+            married:true //boolean
+        }
+        document.write(typeof(human));
+        document.write('<br>');
+        document.write(human['name']);
+        document.write('<br>');
+        document.write(human['name']['lastname']);
+        document.write('<br>');
+        document.write(human['age']);//값을 파싱할때, 키로 값을 뽑아냅니다.
+        document.write('<hr>');
+        // 복잡해 보이지만, key:value ( 고유키:값 )
         // 사용자 데이터형: object(array) 배열
         // 참고: 기본형 데이터: number, string, boolean
         var arrays = [10, 20, 30, 40];
@@ -39,10 +58,12 @@
         document.write(arrays);//pop 이전의 배열값
         document.write('<br>');
         document.write(arrays.pop());//arrays에서 자료를 출력.내용삭제
+        // pop 제일 마지막에 입력된==index가 제일 마지막인값이 출력
         document.write('<br>');
         document.write(arrays);//pop 이후의 배열값
         document.write('<br>');
         document.write(arrays.push(1000));//arrays에 자료 입력
+        // push 인덱스값이 제일 마지막인 자료 다음에 입력이 됩니다.
         document.write('<br>');
         document.write(arrays);
         document.write('<br>');
@@ -50,6 +71,14 @@
         document.write('<br>');
         document.write(arrays);
         document.write('<br>');
+        document.write(arrays.reverse());//sort오름차순1,2,3, reverse내림차순3,2,1
+        document.write('<br>');
+        //내림차순(아래)
+        document.write(arrays.sort(function(a,b){return b-a}));
+        //오름차순을 sort 함수로 구현하기(아래)
+        document.write('<br>');
+        document.write(arrays.sort(function(a,b){return a-b}));
+
         document.write('<br>');
         // 날짜 처리 함수
         var date = new Date;//new 키워드(예약어)로 함수형변수 생성
