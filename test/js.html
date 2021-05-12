@@ -27,7 +27,33 @@
     </table>
     <div id="one">헬로 자바스크립트</div>
     <script>
-        // 연산자: 비교 >, >=, <, <=, ==, ===
+        // 함수형 변수 사용
+        // 기본함수 형태 function 함수명(파라미터1,파리미터2) {구현내용}
+        var plus = function(x,y) { 
+            //무명함수=anonymous함수=콜백함수=자동실행함수
+            var z;
+            z = x + y;
+            return z;
+        }
+        document.write('plus라는변수는 데이터타입이: ', typeof(plus));
+        document.write('<br>');
+        function plus(x,y) { //함수명이 존재
+            var z;
+            z = x + y;
+            return z;
+        }
+        document.write(plus(5,2));
+        document.write('<hr>');
+        // 연산자3: 논리연산종류3가지 &&(x) ||(+파이프라인 2개), !(NOT)
+        var x, y;
+        x = true; y = false;
+        document.write(x && y); //곱하기 1=true, 0=false = 1x0 = 0
+        document.write('<br>');
+        document.write(x || y); //더하기 1=true, 0=false = 1+0 = 1
+        document.write('<br>');
+        document.write(!y);     //반대연산 !false = true
+        document.write('<hr>');
+        // 연산자2: 비교 >, >=, <, <=, ==, ===
         // 결과값=return이 true | false
         // var 뜻은 변수를 선언하는 예약어(미리등록된 용어) 입니다.
         // var var; //예약어를 변수로 사용하려다가 에러 납니다.
@@ -45,7 +71,7 @@
         document.write('<br>');
         document.write(x === z);//숫자 5와 문자 5가 틀리다는 내용
         document.write('<hr>');//수평선태그 horizontal
-        // 연산자: 사칙연산
+        // 연산자1: 사칙연산
         var x, y;
         x = 5; y = 2;
         document.write(x+y);
