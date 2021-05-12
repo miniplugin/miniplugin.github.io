@@ -27,6 +27,18 @@
     </table>
     <div id="one">헬로 자바스크립트</div>
     <script>
+        // 변수=variable 요소(number수,string문자,object객체) 사용에 대해서
+        // 데이터를 사용하는 방법: 변수가 사용 
+        // 기본형: number(수:정수,실수=소수점), string(문자열), boolean(참true,거짓false)
+        // 사용자정의형: object(array배열형), function(함수-메서드형)
+        var 변수1 = 100;//변수는 한글로 하시면 않됨
+        document.write('변수타입은: ', typeof(변수1));
+        document.write('<br>');//줄바꿈 br : break return(중지하고 엔터);
+        변수1 = '100';
+        document.write('변수타입은: ', typeof(변수1));
+        
+        // 특징: 입력된 값에 따라서 변수 형이 결정이 됩니다.
+
         /* 여러줄 주석
          자바스크립트부터는 프로그램이기때문에 디버그용어 사용(에러처리)
          자바언어 부터 개발되었고, 자바스크립트와는 관계없음.
