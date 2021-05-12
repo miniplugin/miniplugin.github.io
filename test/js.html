@@ -14,6 +14,22 @@
         }
         th{ width: 25%;}
     </style>
+    <!-- 제이쿼리 코어 임포트 불러오기 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        // jQuery로 개발자가 프로그램을 간편하게 만들기
+        // jQuery CDN : Contents Delivery Network 인터넷으로 외부 프로그램을 갖다가 사용.
+        // jQuery 의 기본형식 $시작 문서가 준비되었을때 자동구현
+        // 인터프리터의 단점 위 -> 아래 실행되는 순서를 신경쓰지 않아도 됨 -> jQuery 장점.
+        // $('id선택자').click(콜백함수(){구현내용});
+        $(document).ready(function(){ 
+            //html문서를 다 읽어 들인 후에 {블럭}내용이 실행됨
+            $('#checkValue').click(function(){
+                alert($('#name').val());
+                $('#one').css('background-color','red');
+            });
+        });
+    </script>
 </head>
 <body>
     <table id="board">
@@ -26,11 +42,32 @@
         </tr>
     </table>
     <div id="one">헬로 자바스크립트</div>
+    <p class="two">헬로 자바스크리트2</p>
     <input type="text" name="name" id="name" value="테스트">
-    <button onclick="checkValue()">입력값 확인</button>
+    <!-- 입력값을 전송하는 버튼 -->
+    <button onclick="checkValue('zzz')">입력값 확인</button>
+    <button id="checkValue">jQuery 입력값 확인</button>
+    <br>
+    
+
     <script>
         // 여러개의 element 선택
-        var names = document.getElementById('name');
+        // var names = document.getElementById('name');
+        var names = $('#name');
+        var inputName = document.getElementsByName('name');
+        var twoClassName = document.getElementsByClassName('two');
+        //네이밍 방식: 카멜(낙타등)표기법 단어와단어합칠때, 
+        //카멜표기법: 소문자로시작, 다른단어가 나올대는 대문자로 시작, 나머지는 다 소문자
+        console.log(twoClassName);//Two + Class + Name = twoClassName
+        document.write('클래스엘리먼트 내용출력 : ', twoClassName[0]['innerHTML']);
+        function checkValue(params) {//전송을 받습니다.
+            // alert(params + ' 버튼 클릭 되었습니다.');
+            alert(names.val() + " 가 입력한 값입니다.");
+            // document.getElementById('one').style.backgroundColor = 'red';
+            $('#one').css('background-color','red');
+        }
+        console.log(names);
+        document.write('<br>');
         // 변수의 영역(scope)
         // function스코프변수 예약어 var, 블럭scope변수예약어 let, const
         var i = 10;
