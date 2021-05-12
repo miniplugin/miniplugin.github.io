@@ -21,9 +21,37 @@
         가상선택자: ::after, ::before, :before
         가상요소(Element-가상태그): :hover 사용예 a:hover
     */
+    h1 { background-color: skyblue; }
+    div * {
+        color: green;
+    }
+    .box-one, .box-two { background-color: tomato; }
+    #box-four, #box-five { background-color: yellow; }
+    .box-one p:after { content: ' +addadd'; }
+    .box-one p::before { content: 'add+ ';}
+    a:hover { color:white; }
+    /* 크기단위 font크기, img크기 단위종류3가지: ~px, ~em(1.2배수), ~rem(root기반배수) */
+    .box-one { 
+        font-size: 8px; 
+        /* font-size: 1.5em; */
+        /* 웹브라우저 기본 폰트크기는 16px*1.5 = 1.5em */
+        /* font-size: 1.5rem; */
+        }
+    .box-one p {
+        /* 웹브라우저 기본폰트인 16px의 1.5배 아니고, 부모요소의 1.5배 (8px의 1.5배) */
+        font-size: 1.5em;
+        font-size: 1.5rem;
+        /* 위에서부터 해석하는 방식 인터프러터형=자바스크립틑 인터프리터형 언어 */
+    }
 </style>
 </head>
 <body>
+     <h1>헬로 CSS</h1>
+     <div class="box-one"><p>one</p></div>
+     <div class="box-two"><a href="#">two two two</a></div>
+     <div class="box-three">three</div>
+     <div id="box-four">four</div>
+     <div id="box-five">five</div>
     <!-- 
         10 크롬 확장프로그램으로 컬러 피커 사용해보기 OK.
         09 구글 폰트 사용하기: 나눔고딕체 사용 OK.
@@ -39,6 +67,8 @@
         Cascade Style Sheet 계층형 스타일 표 OK.
         01 css 적용하는 3가지 방법 확인, 내부css, 외부css, 인라인css OK.
      -->
+     
+
      <p><span style="color: tomato;">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Corrupti eaque quidem error, perferendis vero sint nulla nam hic. Consectetur, placeat reprehenderit quidem laboriosam aperiam perferendis nemo earum obcaecati eius saepe ex accusantium sint cum! Facere ratione illo explicabo ipsum deserunt, quidem nesciunt. Iusto ex quasi cupiditate et adipisci assumenda doloremque molestiae blanditiis, illum harum placeat velit tempora veritatis accusamus eos itaque labore, ipsa repellat modi aliquam a consequatur aperiam. Obcaecati suscipit fugit odio consequatur quam, harum aliquam fugiat minima possimus dicta sunt consectetur in temporibus minus pariatur, ducimus deleniti molestiae error maiores deserunt voluptas tempore cum debitis! Necessitatibus, dolore numquam!</p>
 </body>
 </html>
