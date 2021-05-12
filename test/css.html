@@ -43,11 +43,38 @@
         font-size: 1.5rem;
         /* 위에서부터 해석하는 방식 인터프러터형=자바스크립틑 인터프리터형 언어 */
     }
+    .box-one {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        padding: 20px; /* 안쪽여백 */
+        /* 바깥여백 : 4가지방향 12시 시작 시계방향 */
+        margin:20px 10px 50px 80px; 
+        /* 바깥여백: 2가지방향 상하 / 좌우 */
+        margin: 30px 60px;/* 30 상하, 60 좌우 */
+        border: 10px solid black;
+        box-sizing: border-box;
+        /* 가로 가운데 정렬하는 방법 */
+        margin: 0px;
+        margin: 0px auto;/* 0 상하, auto 좌우 */
+        margin: 0px;
+        position: fixed; 
+        /* 자리가 다른 태그와 관련없는 위치가짐 absolute 절대위치, fixed 고정위치 */
+        margin-top:20px;
+        margin-left: 20px;
+    }
+    .box-two {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        box-sizing: border-box;/* 필수 */
+    }
 </style>
 </head>
 <body>
      <h1>헬로 CSS</h1>
-     <div class="box-one"><p>one</p></div>
+     <div class="box-one"><p style="color: white;">
+        <a href=""></a> 상단으로 이동</p></div>
      <div class="box-two"><a href="#">two two two</a></div>
      <div class="box-three">three</div>
      <div id="box-four">four</div>
@@ -69,6 +96,7 @@
      -->
      
 
+     <p><span style="color: tomato;">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Corrupti eaque quidem error, perferendis vero sint nulla nam hic. Consectetur, placeat reprehenderit quidem laboriosam aperiam perferendis nemo earum obcaecati eius saepe ex accusantium sint cum! Facere ratione illo explicabo ipsum deserunt, quidem nesciunt. Iusto ex quasi cupiditate et adipisci assumenda doloremque molestiae blanditiis, illum harum placeat velit tempora veritatis accusamus eos itaque labore, ipsa repellat modi aliquam a consequatur aperiam. Obcaecati suscipit fugit odio consequatur quam, harum aliquam fugiat minima possimus dicta sunt consectetur in temporibus minus pariatur, ducimus deleniti molestiae error maiores deserunt voluptas tempore cum debitis! Necessitatibus, dolore numquam!</p>
      <p><span style="color: tomato;">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Corrupti eaque quidem error, perferendis vero sint nulla nam hic. Consectetur, placeat reprehenderit quidem laboriosam aperiam perferendis nemo earum obcaecati eius saepe ex accusantium sint cum! Facere ratione illo explicabo ipsum deserunt, quidem nesciunt. Iusto ex quasi cupiditate et adipisci assumenda doloremque molestiae blanditiis, illum harum placeat velit tempora veritatis accusamus eos itaque labore, ipsa repellat modi aliquam a consequatur aperiam. Obcaecati suscipit fugit odio consequatur quam, harum aliquam fugiat minima possimus dicta sunt consectetur in temporibus minus pariatur, ducimus deleniti molestiae error maiores deserunt voluptas tempore cum debitis! Necessitatibus, dolore numquam!</p>
 </body>
 </html>
