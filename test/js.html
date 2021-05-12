@@ -27,16 +27,57 @@
     </table>
     <div id="one">헬로 자바스크립트</div>
     <script>
+        // 연산자: 비교 >, >=, <, <=, ==, ===
+        // 결과값=return이 true | false
+        // var 뜻은 변수를 선언하는 예약어(미리등록된 용어) 입니다.
+        // var var; //예약어를 변수로 사용하려다가 에러 납니다.
+        var x, y, z;
+        x = 5; y = 2, z = '5';
+        document.write(x > y);
+        document.write('<br>');
+        document.write(x >= y);
+        document.write('<br>');
+        document.write(x < y);
+        document.write('<br>');
+        document.write(x <= y);
+        document.write('<br>');
+        document.write(x == z);//숫자 5와 문자 5 같다는 내용 true
+        document.write('<br>');
+        document.write(x === z);//숫자 5와 문자 5가 틀리다는 내용
+        document.write('<hr>');//수평선태그 horizontal
+        // 연산자: 사칙연산
+        var x, y;
+        x = 5; y = 2;
+        document.write(x+y);
+        document.write('<br>');
+        document.write(x-y);
+        document.write('<br>');
+        document.write(x*y);//곱하기
+        document.write('<br>');
+        document.write(x**y);//제곱하기
+        document.write('<br>');
+        document.write(x/y);//나누기 실수값
+        document.write('<br>');
+        document.write(x%y);//나머지 구하기
+        document.write('<hr>');//수평선태그 horizontal
+        // document 객체안에 변수, 함수, 배열 = 멤버변수에 .으로 직접접근 가능
         // 변수=variable 요소(number수,string문자,object객체) 사용에 대해서
         // 데이터를 사용하는 방법: 변수가 사용 
         // 기본형: number(수:정수,실수=소수점), string(문자열), boolean(참true,거짓false)
         // 사용자정의형: object(array배열형), function(함수-메서드형)
         var 변수1 = 100;//변수는 한글로 하시면 않됨
         document.write('변수타입은: ', typeof(변수1));
+        document.write(변수1+변수1);
         document.write('<br>');//줄바꿈 br : break return(중지하고 엔터);
-        변수1 = '100';
+        변수1 = '100';//'문자', "문자열" = JS 구분없음
         document.write('변수타입은: ', typeof(변수1));
-        
+        document.write(변수1+변수1);
+        document.write('<br>');
+        var name = 'kimilguk';
+        document.write(name[3]);//배열은 위치정보=인덱스값을 가지고 값을제어
+        //인덱스index=색인(책끝에 가나다 인덱스와 같은 역할)
+        //모든언어의 배열의 인데스 시작은 0 부터 입니다.(단, 베이직언어는 1부터)
+
         // 특징: 입력된 값에 따라서 변수 형이 결정이 됩니다.
 
         /* 여러줄 주석
