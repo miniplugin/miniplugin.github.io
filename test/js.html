@@ -27,6 +27,44 @@
     </table>
     <div id="one">헬로 자바스크립트</div>
     <script>
+        // 사용자 데이터형: object(array) 배열
+        // 참고: 기본형 데이터: number, string, boolean
+        var arrays = [10, 20, 30, 40];
+        document.write(typeof(arrays));
+        document.write('<br>');
+        document.write(arrays[2]);//배열index는 0부터 시작.
+        document.write('<br>');
+        document.write(arrays.slice(1,4));//index 1 ~ 4미만
+        document.write('<br>');
+        document.write(arrays);//pop 이전의 배열값
+        document.write('<br>');
+        document.write(arrays.pop());//arrays에서 자료를 출력.내용삭제
+        document.write('<br>');
+        document.write(arrays);//pop 이후의 배열값
+        document.write('<br>');
+        document.write(arrays.push(1000));//arrays에 자료 입력
+        document.write('<br>');
+        document.write(arrays);
+        document.write('<br>');
+        document.write(arrays.join('!!'));//arrays에 자료가 입력은X
+        document.write('<br>');
+        document.write(arrays);
+        document.write('<br>');
+        document.write('<br>');
+        // 날짜 처리 함수
+        var date = new Date;//new 키워드(예약어)로 함수형변수 생성
+        var date2 = new Date;//웹브라우저의 PC의 시간이 저장됩니다.
+        document.write(date);
+        document.write('<br>');
+        document.write(date.getMonth()+1);//현재 월구하기 0부터 시작해서
+        document.write('<br>');
+        document.write(date.getDay());//현재 요일(일0,월1화2.수3...)
+        document.write('<br>');
+        document.write(date.getDate());//현재 날짜 구하기
+        document.write('<br>');
+        document.write(date.getHours());//현재 시간
+        document.write('<hr>');
+        // 인터페이스는 함수명만 있고, 구현내용은 없는 데이터자료형
         // 내장함수란? 아래 사용자가 만든 더하기plus함수가 아닌,
         // 웹브라우저 내장 함수: 자바스크립트는 웹브라우저에 내장된 언어
         // 내장 함수들을 내장함수라고 합니다.
