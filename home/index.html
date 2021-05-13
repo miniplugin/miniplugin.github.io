@@ -16,25 +16,37 @@
 <link rel="stylesheet" href="/home/css/mobile.css">
 <style>
 /* 모바일용 메인페이지 스타일 지정(아래) */
-/* 로고영역 */
-.header_area h1 {
-	float: none;
-	width: 100%;
-	height: 50px;
-	text-align: center;
-	padding: 3px 0px 0px;/* 3px(상하) 0px(좌) 0px(우) */
+/* 상단메뉴영역 */
+.openMOgnb {
+	/* gnb: global navigation bar 약자 메뉴명칭으로 사용 */
+	display: block;
+	position: absolute;
+	left:15px;
+	top:35px;
+	width: 25px;
+	height: 16px;
 }
-.header_area h1 a {
-	/* 로고는 이미지인데 글을 더한 이유는 웹접근성 때문에 추가(스크린리더:시각장애인용유틸리티)  */
-	display: inline-block;
-	width: 150px;
-	height: 80px;
-	background: url(./img/logo.png);/* css3는 함수를 지원합니다. */
-	background-size: 50px 60px !important;/* 백그라운드 이미지 사이즈 가로50px, 세로60px */
-	background-position: center center !important;/* 이미지위치가 가로 가운데, 세로 가운데정렬 */
-	text-indent: -9999px;/* 들여쓰기 이미지만 보이고, 글자는 숨기기 위치 */
+.hdd {
+	text-indent: -9999px;
+	position: absolute;
 }
-/* //로고영역 */
+.openMOgnb span {
+	box-sizing: border-box;/* 박스크기를 테두리까지 크기로 고정 */
+	display: block;
+	width: 25px; height: 3px;
+	margin-bottom: 4px;
+	border-radius: 10px;/* 테두리 라운드 처리 */
+	background: #fff;
+}
+.openMOgnb span:first-of-type + span {width: 17px;} /* + 형제 인접연자 */
+.openMOgnb span:last-child {
+	/* width: 25px; */
+	margin-bottom: 0px;
+}
+.header_cont {
+
+}
+/* //상단메뉴영역 */
 </style>
 <script>
 $(document).ready(function() {
@@ -53,7 +65,12 @@ $(document).ready(function() {
 			<!-- //상단로고영역 -->
 			
 			<!-- 상단메뉴메뉴영역 -->
-			<p class="openMOgnb"><a href="#"><b class="hdd">메뉴열기</b> <span></span><span></span><span></span></a></p>
+			<p class="openMOgnb">
+				<a href="#">
+					<b class="hdd">메뉴열기</b> 
+					<span></span><span></span><span></span>
+				</a>
+			</p>
 			<div class="header_cont">
 				<ul class="util clear">
 					<li><a href="login.html">로그인</a></li>

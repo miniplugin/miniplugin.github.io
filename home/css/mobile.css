@@ -17,6 +17,9 @@ a:link {color: #444;}
 a:hover {color: #fff !important;}
 a:visited {color: #444;}
 a {text-decoration: none;}/* 링크의 밑줄이 사라짐. */
+/* //공통영역 */
+
+/* 부트스트랩 CSS 수정 */
 .clear::after {
 	content: '';
 	clear: both;/* 태그의 위치를 지정하는 float:left|right 속성을 초기화 시킴 */
@@ -31,7 +34,7 @@ a {text-decoration: none;}/* 링크의 밑줄이 사라짐. */
 .w100p { /* 너비크기 100% percent  */
 	width: 100% !important;
 }
-/* //공통영역 */
+/* //부트스트랩 CSS 수정 */
 
 /* 헤더영역 */
 .on { /* .클래스선택자 */
@@ -52,3 +55,23 @@ header { /* 태그선택자 */
 	width: 100%; margin: 0 auto;
 }
 /* //헤더영역 */
+/* 로고영역 */
+.header_area h1 {
+	float: none;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	padding: 3px 0px 0px;/* 3px(상하) 0px(좌) 0px(우) */
+}
+.header_area h1 a {
+	/* 로고는 이미지인데 글을 더한 이유는 웹접근성 때문에 추가(스크린리더:시각장애인용유틸리티)  */
+	display: inline-block;
+	width: 150px;
+	height: 80px;
+	background: url(../img/logo.png) no-repeat;/* css3는 함수를 지원합니다. */
+	background-size: 50px 60px !important;/* 백그라운드 이미지 사이즈 가로50px, 세로60px */
+	background-position: center center !important;/* 이미지위치가 가로 가운데, 세로 가운데정렬 */
+	text-indent: -9999px;/* 들여쓰기 이미지만 보이고, 글자는 숨기기 위치 */
+	overflow: hidden;
+}
+/* //로고영역 */
