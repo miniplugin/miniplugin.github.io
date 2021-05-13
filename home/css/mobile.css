@@ -17,14 +17,14 @@ a:link {color: #444;}
 a:hover {color: #fff !important;}
 a:visited {color: #444;}
 a {text-decoration: none;}/* 링크의 밑줄이 사라짐. */
-/* //공통영역 */
-
-/* 부트스트랩 CSS 수정 */
 .clear::after {
 	content: '';
 	clear: both;/* 태그의 위치를 지정하는 float:left|right 속성을 초기화 시킴 */
 	display: block;/* float는 블럭 속성이 없어진것을 clear시키면, 다시 block속성 부여 */
 }
+/* //공통영역 */
+
+/* 부트스트랩 CSS 수정 */
 .txt_right {
 	text-align: right !important;
 }
