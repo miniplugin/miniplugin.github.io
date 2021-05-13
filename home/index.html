@@ -12,8 +12,18 @@
 <!-- 화면을 초기화 시키는 reset 스타일 임포트:크로스브라이징 처리하기위해서 -->
 <!-- 크롬, IE, 엣지, 사파리, 파이어폭스 h1, p, ul, div 태그의 크기가 조금씩 틀림니다. -->
 <!-- 작업한 결과가 모든 브라우져(크로싱브라우징)에 똑같이 보이게 하기 위한 reset.css(아래) -->
+<link rel="stylesheet" href="/home/css/reset.css">
+<link rel="stylesheet" href="/home/css/mobile.css">
 <style>
 /* 모바일용 메인페이지 스타일 지정(아래) */
+/* 공통영역 */
+body { /* body a 태그엔 적용이 않됩니다. */
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px !important;/* important 중요함, body 폰트크기는 무조건 고정 */
+    letter-spacing: -1px !important;
+    color: #444 !important;
+    word-wrap: break-word !important;
+}
 </style>
 <script>
 $(document).ready(function() {
