@@ -16,7 +16,46 @@
 <link rel="stylesheet" href="/home/css/mobile.css">
 <style>
 /* 모바일용 메인페이지 스타일 지정(아래) */
-
+/* 푸터스타일지정 */
+footer {
+	border-top: 1px solid #ddd;
+}
+.foot_area { /* 모바일에서는 의미없고, 테블릿이상에서 의미있는 스타일 */
+	box-sizing: border-box;
+	padding: 0px 20px 90px;
+	position: relative;/* relative가 있다는 것은 foot_area안쪽에 태그의 기준으로 사용하다는 의미 */
+}
+.foot_list {
+	padding-top: 25px;
+}
+.foot_list li {
+	float: left;/* 세로배치 콘텐츠를 가로로 배치할때 사용 */
+}
+.foot_list li:first-child::after {
+	content: '|';
+	display: inline-block;
+	padding: 0px 10px;
+	font-size: 10px;
+	position: relative;
+	top: -2px;
+}
+.foot_list li a {
+	font-weight: bold;
+	font-size: 15px;
+}
+.foot_list li a:hover {color: black !important;}
+.foot_area h2 {
+	padding-top: 15px;
+	font-size: 14px;/* px:픽셀pixel html크기 단위,기타단위: em, rem(root em) */
+	color: #666;
+}
+.addr {
+	line-height: 1.3;/* 줄간격 1.3배 */
+	font-size: 14px;
+	color: #767676;
+	padding-top: 5px;
+}
+/* //푸터스타일지정 */
 </style>
 <script>
 $(document).ready(function() {
