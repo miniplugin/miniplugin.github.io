@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 제이쿼리 코어 임포트 불러오기 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./json.js"></script>
+    <script>
+        // 외부 js파일의 json 데이터를 body 태그안의 #board 내부에 파싱합니다.
+        console.log(jsonData);
+        // jsonData 파싱해서 #board 영역에 동적으로 출력
+        $(document).ready(function(){
+            for(var i=0;i<jsonData.length;i++) {
+                // jsonData 1개씩 뽑아서 화면에 table>tr>td에 출력하게 합니다.
+                // append는 가상선택자의 after와 같음. 기준영역의 다음을 말합니다.
+                $('#board tbody').append('<tr>');
+                $('#board tbody').append('<td style="text-align:center;">'+(i+1)+'</td>');
+                // $('#board tbody').append('<td>'+jsonData[i]['_id']+'</td>');
+                // $('#board tbody').append('<td>'+jsonData[i]['age']+'</td>');
+                // $('#board tbody').append('<td>'+jsonData[i]['eyeColor']+'</td>');
+                // $('#board tbody').append('<td>'+jsonData[i]['name']+'</td>');
+                $('#board tbody').append('</tr>');
+            }
+        });
+    </script>
+</head>
+<body>
+    <table id="board">
+        <tr>
+            <th>No</th>
+            <th>id</th>
+            <th>age</th>
+            <th>eyeColor</th>
+            <th>name</th>
+            <tbody></tbody>
+        </tr>
+    </table>
+</body>
+</html>

@@ -26,7 +26,11 @@
                 // jsonData 1개씩 뽑아서 화면에 table>tr>td에 출력하게 합니다.
                 // append는 가상선택자의 after와 같음. 기준영역의 다음을 말합니다.
                 $('#board tbody').append('<tr>');
-                
+                $('#board tbody').append('<td style="text-align:center;">'+(i+1)+'</td>');
+                $('#board tbody').append('<td>'+jsonData[i]['_id']+'</td>');
+                $('#board tbody').append('<td>'+jsonData[i]['age']+'</td>');
+                $('#board tbody').append('<td>'+jsonData[i]['eyeColor']+'</td>');
+                $('#board tbody').append('<td>'+jsonData[i]['name']+'</td>');
                 $('#board tbody').append('</tr>');
             }
         });
@@ -49,6 +53,7 @@
 <body>
     <table id="board">
         <tr>
+            <th>No</th>
             <th>id</th>
             <th>age</th>
             <th>eyeColor</th>
