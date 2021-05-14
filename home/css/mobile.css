@@ -339,3 +339,96 @@ li.imglist2 {
 /* //공지사항최근게시물영역 */
 
 /* //본문컨테이너영역 */
+/* 푸터스타일지정 */
+footer {
+	border-top: 1px solid #ddd;
+}
+.foot_area { /* 모바일에서는 의미없고, 테블릿이상에서 의미있는 스타일 */
+	box-sizing: border-box;
+	padding: 0px 20px 90px;
+	position: relative;/* relative가 있다는 것은 foot_area안쪽에 태그의 기준으로 사용하다는 의미 */
+}
+.foot_list {
+	padding-top: 25px;
+}
+.foot_list li {
+	float: left;/* 세로배치 콘텐츠를 가로로 배치할때 사용 */
+}
+.foot_list li:first-child::after {
+	content: '|';
+	display: inline-block;
+	padding: 0px 10px;
+	font-size: 10px;
+	position: relative;
+	top: -2px;
+}
+.foot_list li a {
+	font-weight: bold;
+	font-size: 15px;
+}
+.foot_list li a:hover {color: black !important;}
+.foot_area h2 {
+	padding-top: 15px;
+	font-size: 14px;/* px:픽셀pixel html크기 단위,기타단위: em, rem(root em) */
+	color: #666;
+}
+.addr {
+	line-height: 1.3;/* 줄간격 1.3배 */
+	font-size: 14px;
+	color: #767676;
+	padding-top: 5px;
+}
+.br_line {
+	display: block;/* 블럭영역은 1줄모두 자리차지==엔터==줄바꿈 */
+}
+.copy {
+	padding: 3px 0px 20px;
+	font-size: 14px;
+	color: #767676;
+}
+.snslink {
+	position: static;/* 다른태그를 기준으로 static고정값,relative상대값 */
+	width: 210px;
+	margin: 10px auto;/* 10상하여백, auto 좌우=가운데정렬  */
+}
+.snslink li:first-child {
+	margin-left: 0px;
+}
+.snslink li {
+	margin-left: 30px;
+	float: left;/* 리스트li태그의 세로배치를 가로배치로 변경할때 사용 */
+}
+.snslink li a {
+	display: block;
+	width: 50px;
+	height: 74px;
+	text-indent: -9999px;/* 들여쓰기, 글자를 숨기기: 웹접근성(시각장애인용구현) */
+	background: url(../img/ico_blog_r.png) no-repeat;
+	overflow: hidden;
+}
+.snslink li + li a {/* 인접(형제)연산자+ == sibling(시블링) */
+	background-image: url(../img/ico_facebook_r.png);
+}
+.snslink li + li + li a {
+	background-image: url(../img/ico_instargram_r.png);
+}
+/* 퀴메뉴영역 */
+.to_top {
+	position: fixed;/* 붙박이:마우스 스크롤해도 항상 그자리 고정되어 있음. */
+	right: 20px;
+	bottom: 100px;
+	text-align: center;
+	background: none;
+	z-index: 100;/* 슬라이드 이미지 200 보다는 아래이기때문에 겹치면 않보임. */
+}
+.to_top a {
+	display: block;
+	width: 45px;
+	height: 45px;
+	background: url(../img/ico_totop_mo.png) no-repeat center;
+	background-size: 45px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+/* //퀵메뉴영역 */
+/* //푸터스타일지정 */
