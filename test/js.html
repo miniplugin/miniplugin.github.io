@@ -18,10 +18,46 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./json.js"></script>
     <script>
+        $(document).ready(function() {
+            // RestAPI제공하는 곳: 공공데이터포털, 네이버, 구글, 인스타, 페복, 카카오, 트위터..
+            // RestApi서버에서 받은 빅데이터(코로나19확진자위치와발생일시)를 파싱(아래)
+            // $.ajax({}); Asyncronous Javascript and Xml 비동기 자바스크립트 와 Xml 통신
+            // Xml대신에 json데이터를 사용합니다.
+            // http통신: 비동기(추가) vs 동기(기본)
+            // 동기: 웹프로그램은 기본=옛날에는 동영상재생시, 100메가avi모두 다운로드 후 재생
+            // 비동기: 위 와 같은 상황에서는 다중작업이 않됨. 사이트가 먹통처럼 보입니다. 방지하는 방식==비동기
+            // $.ajax 함수로 비동기 데이터(xml -> json) 전송을 사용합니다.
+            $.ajax({
+                type:'get',//method방법, get(검색),post(보안필요: 입력,수정,삭제)
+                url:'https://coroname.me/getdata',//RestApi서버의 URL주소,
+                dataType:'text',//RestApi서버에서 전송받은 데이터 형식을 명시, json, text
+                success:function(result) {
+                    var jsonData = JSON.parse(result);
+                    console.log(jsonData);//result에는 위 url에서 dataType형식으로 받은자료가 저장됨
+                },
+                error:function() {
+                    alert('RestApi서버에 문제가 발생했습니다. 나중에 이용해 주세요!');
+                }//url Rest서버가 정전, 프로그램에러일때, 처리할 내용 명시.
+            });
+        });
+        
         // 외부 js파일의 json 데이터를 body 태그안의 #board 내부에 파싱합니다.
         console.log(jsonData);
         // jsonData 파싱해서 #board 영역에 동적으로 출력
         $(document).ready(function(){
+            // 스프링jsp(java)방식에서 파싱하는 방법(아래)
+            // 향상된 for반복문으로 파싱하는 방법(아래)
+            var i = 0;// index 정의
+            for(var jsonOne of jsonData) {
+                i = i + 1;
+                $('#board #tbody').append('<tr>');
+                $('#board #tbody').append('<td style="text-align:center;">'+(i)+'</td>');
+                $('#board #tbody').append('<td style="background-color:red">'+jsonOne._id+'</td>');
+                $('#board #tbody').append('<td>'+jsonOne.age+'</td>');
+                $('#board #tbody').append('<td>'+jsonOne.eyeColor+'</td>');
+                $('#board #tbody').append('<td>'+jsonOne.name+'</td>');
+                $('#board #tbody').append('</tr>');
+            }
             // jQuery에서 파싱하는 방법(아래)
             // $.each(json데이터오브젝트, 콜백함수funtion(index, jsonOne) {});
             $.each(jsonData, function(index, jsonOne){// jsonOne 1개의 레코드값
