@@ -30,10 +30,22 @@
             $.ajax({
                 type:'get',//method방법, get(검색),post(보안필요: 입력,수정,삭제)
                 url:'https://coroname.me/getdata',//RestApi서버의 URL주소,
-                dataType:'text',//RestApi서버에서 전송받은 데이터 형식을 명시, json, text
+                dataType:'json',//RestApi서버에서 전송받은 데이터 형식을 명시, json, text
                 success:function(result) {
-                    var jsonData = JSON.parse(result);
+                    // var jsonData = JSON.parse(result);
+                    var jsonData = result.data;//data 키의 값을 반환함.
                     console.log(jsonData);//result에는 위 url에서 dataType형식으로 받은자료가 저장됨
+                    var i = 0;// index 정의
+                    for(var jsonOne of jsonData) {
+                        i = i + 1;
+                        $('#board #tbody').append('<tr>');
+                        $('#board #tbody').append('<td style="text-align:center;">'+(i)+'</td>');
+                        $('#board #tbody').append('<td style="background-color:red">'+jsonOne.place+'</td>');
+                        $('#board #tbody').append('<td>'+jsonOne.latlng+'</td>');
+                        $('#board #tbody').append('<td>'+jsonOne.createDate+'</td>');
+                        $('#board #tbody').append('<td>'+jsonOne.region+'</td>');
+                        $('#board #tbody').append('</tr>');
+                    }
                 },
                 error:function() {
                     alert('RestApi서버에 문제가 발생했습니다. 나중에 이용해 주세요!');
