@@ -43,7 +43,7 @@ function play_w(directw) { // 좌우로 슬라이드되는 함수선언(왼쪽|�
 		$('li.seq a img').attr('src',$('li.seq a img').attr('src').replace('_on.png','_off.png'));
 		// btn_rollbutt_on.png -> btn_rollbutt_off.png 이렇게 3개가 한꺼번에 변경되는 코드
 	});
-	// 아래 결과는 현재 선택된 슬라이드 이미지만 _on.png 타원 으로 replace바꾸는 명령
+	//아래 결과는 현재 선택된 슬라이드 이미지만 _on.png 타원 으로 replace바꾸는 명령
 	$('li.butt'+slideNum+' a img').attr('src',$('li.butt'+slideNum+' a img').attr('src').replace('_off.png', '_on.png'));
 	// slineNum조건 실행 아래 3가지중 1가지는 항상 실행됨
 	if(slideNum == 0) {
