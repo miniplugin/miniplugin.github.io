@@ -18,13 +18,32 @@
 <!-- 테블릿용 CSS 임포트 -->
 <link rel="stylesheet" href="/home/css/tablet.css">
 <!-- PC용 CSS 임포트 -->
+<link rel="stylesheet" href="/home/css/pc.css">
 <script src="/home/js/main.js"></script>
 <!-- 메인슬라이드 코어 임포트 -->
 <script src="/home/js/slidemain.js"></script>
 <style>
-/* 테블릿용 메인페이지 스타일 지정(아래) */
+/* 테블릿용 메인페이지 스타일 지정(아래) 801px~무한대까지 재정의 */
 @media all and (min-width:801px) {
 	
+}
+/* PC용 메인페이지 스타일 지정 1066px~무한대까지 재정의 */
+@media all and (min-width:1066px) {
+	/* 상단로고, 메뉴영역 */
+	.header_area h1 {
+		padding-left: 0px;
+	}
+	.header_cont {
+		width: 769px;
+		padding-right: 10px;
+	}
+	.gnb li a {
+		padding: 26px 40px;
+	}
+	.gnb_depth { /* 2차메뉴 내용 */
+		
+	}
+	/* //상단로고, 메뉴영역 */
 }
 </style>
 <script>
