@@ -81,4 +81,49 @@
 		padding-right: 0px;
 	}
 	/* //상단로고와 메뉴스타일 */
+
+    /* 컨테이너영역 */
+	#container {
+		padding-bottom: 20px;
+		width: auto;
+		position: inherit;/* 상속:부모영역의 위치를 상속받습니다. */
+	}
+	/* //컨테이너영역 */
+	/* 슬라이드영역 */
+	ul.viewImgList li {
+		height: 550px;
+	}
+	/* //슬라이드영역 */
+	/* 최신겔러리 */
+	.about_area h2 {
+		padding: 55px 0px 105px;
+		font-size: 40px;
+	}
+	.about_area h2 b {
+		display: inherit;
+		padding-top: inherit;
+	}
+	.place_list {
+		box-sizing: border-box;
+		padding: 0px 20px;
+	}
+	.place_list li:first-child {
+		margin-left: 0px;
+	}
+	.place_list li {
+		float: left;/* 세로배치를 가로배치로 바꾸는 명령 */
+		width: 32%; /* 32%x3=96%, 3개 사이 2%씩이면 = 4%가 여백, 전체 100% */
+		margin-left: 2%;
+		position: relative; /* li태그의 안쪽 겔러리 이미지,제목 위치의 기준값 */
+		top: -50px;
+		padding: 0px;
+	}
+	.place_list li p.txt {
+		padding: 10px 30px 0px;
+		line-height: 1.8;
+	}
+	.place_list li .view {
+		margin-top: 20px;
+	}
+	/* //최신겔러리 */
 }
