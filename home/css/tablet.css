@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* 테블릿용 메인페이지 스타일 지정(아래) */
+@media all and (min-width:801px) {
+	/* 상단로고와 메뉴스타일 */
+	header {
+		height: 113px;
+	}
+	.header_area h1 {
+		float: left;/* 로고 이미지를 가운데 -> 왼쪽으로 정렬 */
+		padding: 15px 0px 0px;
+		padding-left: 20px;
+		width: auto;
+		height: inherit;/* 상속:현재영역의 부모의 높이를 그대로 사용하겠다는 명시 */
+		text-align: inherit;
+	}
+	.header_area h1 a {
+		display: block;
+		width: 100px;
+		height: 80px;
+		background-size: 70px 80px !important;
+	}
+	.openMOgnb {
+		display: none; /* 모바일용 햄버거메뉴 숨기기 */
+	}
+	.header_cont {
+		display: block;
+		float: right;
+		width: 60%;
+		padding-right: 20px;
+		background: none;
+		margin-top: 0px;
+	}
+	.closePop { display: none; }
+	.util { /* 메인메뉴 상단의 소메뉴 util이라고 이름지음 */
+		padding: 0px;
+		text-align: right;
+		padding-top: 10px;
+	}
+	.util li {
+		float: none;
+		display: inline;
+	}
+	.util li::after {
+		color: #fff;
+	}
+	.util li a {
+		font-size: 14px;
+	}
+	.gnb { /* 대메뉴=1차메뉴 */
+		float: right;
+		padding-top: 5px;
+		height: inherit;
+		border-top: none;
+	}
+	.gnb li {
+		width: auto;
+		text-align: inherit;
+		box-sizing: inherit;
+		border-bottom: none;
+	}
+	.gnb li:nth-child(2n+1) { /* 대메뉴 중간 막대 사라지게 하는 명령 */
+		border: none;
+	}
+	.gnb li a {
+		padding: 26px 25px;
+		font-size: 18px;
+		height: inherit;
+		line-height: inherit;
+		background: none;
+	}
+	.gnb li + li a {
+		background: none;
+	}
+	.gnb li + li + li a {
+		background: none;
+	}
+	.gnb li + li + li + li a {
+		background: none;
+	}
+	.gnb li:last-child a { /* 제일 오른쪽 li태그 영역 */
+		padding-right: 0px;
+	}
+	/* //상단로고와 메뉴스타일 */
+}
