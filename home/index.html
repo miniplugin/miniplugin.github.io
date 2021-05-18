@@ -35,18 +35,20 @@
 <script>
 // PC용 대메뉴 마우스 롤아웃 이베트 만들기(아래)
 //첫번째대메뉴 서브메뉴=.gnb_depth2_1 마우스 롤아웃 상태처리
-var isOver11 = false;//불린boolean 데이터형으로 플래그(깃발)
+var isOver1 = false;//1차메뉴 숨김처리 플래그(깃발)
+var isOver21 = false;//2차메뉴 숨김처리 플래그(깃발)
 function goHide1() {
-	if(!isOver11) {//2개변수 모두 true 일때 구현
+	if(!isOver1 && !isOver21) {//2개변수 모두 false 일때 아래내용 실행됨
 		//jQuery는 뒤에서 앞으로 해석(영어와 같은)
 		$('.gnb_depth2_1').stop().fadeOut('fast');
 		//대메뉴 중 1번의 2차메뉴가 .gnb_depth2_1 영역
 	}
 }
 //두번째대메뉴 서브메뉴=.gnb_depth2_2 마우스 롤아웃 상태처리
-var isOver21 = false;
+var isOver2 = false;//1차메뉴 숨김처리 플래그(깃발)
+var isOver22 = false;//2차메뉴 숨김처리 플래그(깃발)
 function goHide2() {
-	if(!isOver21) {
+	if(!isOver2 && !isOver22) {
 		$('.gnb_depth2_2').stop().fadeOut('fast');
 	}
 }
@@ -59,41 +61,48 @@ $(document).ready(function(){
 		if(parseInt($('header').css('width'))>=1049) { //header태그의 가로크기가 1055 이상이라면
 			$('.gnb_depth2_1').fadeIn('fast');
 		}
-		isOver11 = true;
-	});
-	$('.openAll1').focus(function(){ //시각장애인용 탭키 이용시 사용
-		if(parseInt($('header').css('width'))>=1049) { //header태그의 가로크기가 1055 이상이라면
-			$('.gnb_depth2_1').fadeIn('fast');
-		}
-		isOver11 = true;
+		isOver1 = true;
 	});
 	// [대메뉴1번]의 마우스 아웃 이벤트 => .gbn_depth2_1 서브메뉴 숨기기
 	$('.openAll1').mouseout(function(){
-		isOver11 = false;
+		isOver1 = false;
 		setTimeout('goHide1()',200);//0.2마다 함수를 실행해서 서브메뉴를 숨기기처리 
 	});
+	// [서브메뉴] 마우스 오버 했을때
+	$('.gnb_depth2_1').mouseover(function(){
+		isOver21 = true;//fadeOut 작동을 하지 않겠다는 명시적인 변수값.
+	});
+	// [서브메뉴] 마우스 아웃 했을때
+	$('.gnb_depth2_1').mouseout(function(){
+		isOver21 = false;//faseOut 을 작동하겠다는 명시적인 변수값.
+		setTimeout("goHide1()", 200);
+	});
+	//================================================================
 	// [대메뉴2번]의 마우스 오버 이벤트 => .gnb_depth2_2 서브메뉴 보이기
 	$('.openAll2').mouseover(function(){
 		if(parseInt($('header').css('width'))>=1049) {
 			$('.gnb_depth2_2').fadeIn('fast');
 		}
-		isOver21 = true;
-	});
-	$('.openAll2').focus(function(){//시각장애인용 탭키 이용시 사용
-		if(parseInt($('header').css('width'))>=1049) {
-			$('.gnb_depth2_2').fadeIn('fast');
-		}
-		isOver21 = true;
+		isOver2 = true;
 	});
 	// [대메뉴2번]의 마우스 아웃 이벤트 => .gbn_depth2_2 숨기기
 	$('.openAll2').mouseout(function(){
-		isOver21 = false;
+		isOver2 = false;
 		setTimeout('goHide2()',200);//서브메뉴 숨김
+	});
+	// [서브메뉴] 마우스 오버 했을때
+	$('.gnb_depth2_2').mouseover(function(){
+		isOver22 = true;//fadeOut 작동을 하지 않겠다는 명시적인 변수값.
+	});
+	// [서브메뉴] 마우스 아웃 했을때
+	$('.gnb_depth2_2').mouseout(function(){
+		isOver22 = false;//faseOut 을 작동하겠다는 명시적인 변수값.
+		setTimeout("goHide2()", 200);
 	});
 });
 // 메인페이지 전용 슬라이드 호출 부분
 $(document).ready(function() {
-	//위에서 선언한 함수|변수 사용(아래)
+	// 위에서 선언한 함수|변수 사용(아래)
 	//여기서 함수호출(실행)
 	slideAuto = setTimeout('play_w("right")', 3000);//3초마다 play_w함수 실행
 	var slidePlayHide = setTimeout(function(){
