@@ -168,7 +168,7 @@ header { /* 태그선택자 */
 }
 .gnb_depth {
 	/* 2차(서브)메뉴 */
-	display: none;
+	/* display: none; */
 }
 .gnb li + li a { /* 1차(대메뉴) li 태그중 2번째영역 */
 	background-image: url(../img/ico_gnb02.png);	
@@ -342,6 +342,7 @@ li.imglist2 {
 /* 푸터스타일지정 */
 footer {
 	border-top: 1px solid #ddd;
+	text-align: left;
 }
 .foot_area { /* 모바일에서는 의미없고, 테블릿이상에서 의미있는 스타일 */
 	box-sizing: border-box;
