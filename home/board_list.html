@@ -19,10 +19,14 @@
 <link rel="stylesheet" href="/home/css/tablet.css">
 <!-- PC용 CSS 임포트 -->
 <link rel="stylesheet" href="/home/css/pc.css">
+<!-- 게시판 CSS 임포트 -->
+<link rel="stylesheet" href="/home/css/board.css">
 <script src="/home/js/main.js"></script>
 <!-- 메인슬라이드 코어 임포트 -->
 <script src="/home/js/slidemain.js"></script>
 <style>
+/* 모바일용 게시판 스타일 */
+
 /* 테블릿용 메인페이지 스타일 지정(아래) 801px~무한대까지 재정의 */
 @media all and (min-width:801px) {
 	
@@ -35,37 +39,7 @@
 <script>
 // 메인페이지 전용 슬라이드 호출 부분
 $(document).ready(function() {
-	// 위에서 선언한 함수|변수 사용(아래)
-	//여기서 함수호출(실행)
-	slideAuto = setTimeout('play_w("right")', 3000);//3초마다 play_w함수 실행
-	var slidePlayHide = setTimeout(function(){
-		$('.rollplay').css('display','none');
-	},3000);//3초 후에 rollplay클래스 플레이버튼 영역을 숨김
-	// 3개의 슬라이드 버튼 클랙 액션처리
-	$('.rollstop a').click(function(){
-		// this는 클릭한 본인 태그를 말합니다.
-		$(this).parent().hide();//현재 stop버튼 숨김.
-		$('.rollplay').css('display','inline-block');
-		if(slideAuto) {
-			clearTimeout(slideAuto);//slideAuto변수가 없다면, play_w함수를 실행 중지.
-		}
-	});
-	$('.rollplay a').click(function(){
-		$(this).parent().hide();// a태그의 부모 rollplay영역 입니다.
-		$('.rollstop').css('display','inline-block');
-		play_w('right');//3초마다 슬라이드 이미지 액션일 발생합니다.
-
-	});
-	$('.rollingbtn li.seq a').each(function(index){
-		$(this).click(function(){
-			$('.rollplay').hide();
-			$('.rollstop').css('display','inline-block');
-			if(slideAuto) {
-				clearTimeout(slideAuto);//슬라이드 중지
-			}
-			play_w(index);//슬라이드 재생 : 단 시작위치는 클릭한 index부터 무한반복
-		});
-	});
+	
 });
 </script>
 </head>
@@ -123,8 +97,128 @@ $(document).ready(function() {
 	<!-- //헤더상단메뉴영역영역 -->
 	
 	<!-- 메인콘텐츠영역 -->
+    <div id="container">
+		<!-- 메인상단위치표시영역 -->
+		<div class="location_area customer">
+			<div class="box_inner">
+				<h2 class="tit_page">스프링 <span class="in">in</span> 자바</h2>
+				<p class="location">고객센터 <span class="path">/</span> 공지사항</p>
+				<ul class="page_menu clear">
+					<li><a href="#" class="on">공지사항</a></li>
+					<li><a href="#">문의하기</a></li>
+				</ul>
+			</div>
+		</div>	
+		<!-- //메인상단위치표시영역 -->
 
-    	<!-- //메이콘텐츠영역 -->
+		<!-- 메인본문영역 -->
+		<div class="bodytext_area box_inner">
+			<!-- 검색폼영역 -->
+			<form id="search_form" name="search_form" action="board_list.html" class="minisrch_form">
+				<fieldset>
+					<legend>검색</legend>
+					<input name="search_keyword" type="text" class="tbox" title="검색어를 입력해주세요" placeholder="검색어를 입력해주세요">
+					<button class="btn_srch">검색</button>
+				</fieldset>
+			</form>
+			<!-- //검색폼영역 -->
+			
+			<!-- 게시물리스트영역 -->
+			<table class="bbsListTbl" summary="번호,제목,조회수,작성일 등을 제공하는 표">
+				<caption class="hdd">공지사항  목록</caption>
+				<thead>
+					<tr>
+						<th scope="col">번호</th>
+						<th scope="col">제목</th>
+						<th scope="col">조회수</th>
+						<th scope="col">작성일</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td class="tit_notice"><a href="board_view.html">이번 여름 휴가 제주 갈까? 미션 투어 (스프링경비 50만원 지원)</a> </td>
+						<td>123</td>
+						<td>2018-08-01</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td class="tit_notice"><a href="board_view.html">박물관 미션 투어 응모 당첨자 발표</a> </td>
+						<td>123</td>
+						<td>2018-08-01</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td class="tit_notice"><a href="board_view.html">추석 연휴 티켓/투어 배송 및 직접 수령 안내</a> </td>
+						<td>123</td>
+						<td>2018-08-01</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td class="tit_notice"><a href="board_view.html">하롱베이 서비스 OPEN! (스프링정보, 가이드북, 가이드맵)</a> </td>
+						<td>123</td>
+						<td>2018-08-01</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td class="tit_notice"><a href="board_view.html">스프링 서비스 점검 안내 - 스프링에서 매월 실시하는 정기점검 안내</a> </td>
+						<td>123</td>
+						<td>2018-08-01</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td class="tit_notice"><a href="board_view.html">이번 여름 휴가 제주 갈까? 미션 투어 (스프링경비 50만원 지원)</a> </td>
+						<td>123</td>
+						<td>2018-08-01</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td class="tit_notice"><a href="board_view.html">박물관 미션 투어 응모 당첨자 발표</a> </td>
+						<td>123</td>
+						<td>2018-08-01</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td class="tit_notice"><a href="board_view.html">추석 연휴 티켓/투어 배송 및 직접 수령 안내</a> </td>
+						<td>123</td>
+						<td>2018-08-01</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td class="tit_notice"><a href="board_view.html">하롱베이 서비스 OPEN! (스프링정보, 가이드북, 가이드맵)</a> </td>
+						<td>123</td>
+						<td>2018-08-01</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td class="tit_notice"><a href="board_view.html">스프링 서비스 점검 안내</a> </td>
+						<td>123</td>
+						<td>2018-08-01</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- //게시물리스트영역 -->
+			
+			<!-- 페이징처리영역 -->
+			<div class="pagination">
+				<a href="javascript:;" class="firstpage  pbtn"><img src="img/btn_firstpage.png" alt="첫 페이지로 이동"></a>
+				<a href="javascript:;" class="prevpage  pbtn"><img src="img/btn_prevpage.png" alt="이전 페이지로 이동"></a>
+				<a href="javascript:;"><span class="pagenum currentpage">1</span></a>
+				<a href="javascript:;"><span class="pagenum">2</span></a>
+				<a href="javascript:;"><span class="pagenum">3</span></a>
+				<a href="javascript:;"><span class="pagenum">4</span></a>
+				<a href="javascript:;"><span class="pagenum">5</span></a>
+				<a href="javascript:;" class="nextpage  pbtn"><img src="img/btn_nextpage.png" alt="다음 페이지로 이동"></a>
+				<a href="javascript:;" class="lastpage  pbtn"><img src="img/btn_lastpage.png" alt="마지막 페이지로 이동"></a>
+			</div>
+			<!-- //페이징처리영역 -->
+			<p class="btn_line">
+				<a href="board_write.html" class="btn_baseColor">등록</a>
+			</p>
+		</div>
+		<!-- //메인본문영역 -->
+	</div>
+    <!-- //메인콘텐츠영역 -->
 	
 	<!-- 푸터메뉴및사업자정보영역 -->
 	<footer>
