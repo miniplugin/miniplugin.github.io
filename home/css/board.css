@@ -164,3 +164,39 @@ input::placeholder { color: #999; } /* IE(Internet Explore)브라우저용 스�
 }
 /* //게시판리스트 영역 */
 /* 여기까지가 모바일용 이후 태블릿용 스타일지정 시작 */
+/* 테블릿용 메인페이지 스타일 지정(아래) 801px~무한대까지 재정의 */
+@media all and (min-width:801px) {
+	/* 테블릿+PC용 스타일 */
+    .bbsListTbl th:nth-child(1) {
+        display: table-cell;
+        width: 6%;
+        margin-top: 7px; /* IE브라우저 호환성=크로싱브라우징 처리 */
+    }
+    .bbsListTbl th:nth-child(2) {
+        width: 65%;
+    }
+    .bbsListTbl th:nth-child(3) {
+        display: table-cell;
+        margin-top: 7px;
+    }
+    .bbsListTbl th:nth-child(4) {
+        width: 20%;
+    }
+    .bbsListTbl td:nth-child(1) {
+        display: table-cell;
+    }
+    .bbsListTbl td:nth-child(3) {
+        display: table-cell;
+    }
+    .btn_baseColor {
+        width: 125px;
+        font-weight: normal;
+    }
+    .bbsListTbl td a { /* 태블릿+PC용 */
+    overflow: inherit; /* 초기화 */
+    text-overflow: inherit;
+    white-space: inherit;
+    display: inherit;
+    width: inherit;
+    }
+}
