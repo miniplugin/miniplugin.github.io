@@ -26,81 +26,13 @@
 <script src="/home/js/slidemain.js"></script>
 <style>
 /* 모바일용 게시판 스타일 */
-/* 게시판리스트 영역 */
-.bodytext_area {
-    box-sizing: border-box;
-    padding: 0px;
-}
-.minisrch_form {
-    width: 100%;
-    text-align: right;
-    margin-bottom: 20px;
-}
-.minisrch_form .tbox {
-    padding: 0px 5px 0px 30px;
-    width: 200px;
-    height: 35px;
-    line-height: 35px;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    background: url(../home/img/ico_search.png) no-repeat 10px 50%;
-    background-size: 15px;
-}
-.btn_srch {
-    display: inline-block;/* 줄바꿈없이 자리차지하기 */
-    width: 70px;
-    text-align: center;/* left center right */
-    height: 35px;
-    font-size: 14px;
-    line-height: 35px;
-    vertical-align: middle;/* top middle bottom */
-    background: #384d75;
-    color: #fff !important;
-    border: none;
-}
-.minisrch_form legend {
-    text-indent: -9999px; /* 시각장애인용 처리=웹접근성처리 */
-    font-size: 0px;
-}
-input::placeholder { color: #999; } /* IE(Internet Explore)브라우저용 스타일=크로스브라우징 처리 */
-.bbsListTbl {
-    width: 100%;
-    border-top: 2px solid #384d75;
-}
-.bbsListTbl th:nth-child(1) { display: none; } /* 모바일에서는 가로를 단순하게 처리하는 용도 */
-.bbsListTbl th:nth-child(2) { width: 70%; } /* 모바일전용 */
-.bbsListTbl th:nth-child(3) { display: none; }
-.bbsListTbl th:nth-child(4) { width: 30%; }
-.bbsListTbl th {
-    border-bottom: 1px solid #ccc;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 0px;
-    box-sizing: border-box;
-    height: 45px;
-    background: #fef3fa;
-}
-.bbsListTbl td:nth-child(1) { display: none; }
-.bbsListTbl td:nth-child(3) { display: none; }
-.bbsListTbl td {
-    text-align: center;
-    line-height: 1.3;
-    border-bottom: 1px solid #ccc;
-}
-.bbsListTbl td:nth-child(2) { text-align: left; }
-.bbsListTbl th, .bbsListTbl td {
-    padding: 10px;
-    box-sizing: border-box;
-    height: 45px;
-}
-.bbsListTbl td a {
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-/* //게시판리스트 영역 */
+
 /* 테블릿용 메인페이지 스타일 지정(아래) 801px~무한대까지 재정의 */
 @media all and (min-width:801px) {
-	
+	/* 테블릿+PC용 스타일 */
+    .bbsListTbl th:nth-child(1) {
+        display: table-cell;
+    }
 }
 /* PC용 메인페이지 스타일 지정 1066px~무한대까지 재정의 */
 @media all and (min-width:1066px) {
@@ -272,7 +204,6 @@ $(document).ready(function() {
 			
 			<!-- 페이징처리영역 -->
 			<div class="pagination">
-				<a href="javascript:;" class="firstpage  pbtn"><img src="img/btn_firstpage.png" alt="첫 페이지로 이동"></a>
 				<a href="javascript:;" class="prevpage  pbtn"><img src="img/btn_prevpage.png" alt="이전 페이지로 이동"></a>
 				<a href="javascript:;"><span class="pagenum currentpage">1</span></a>
 				<a href="javascript:;"><span class="pagenum">2</span></a>
@@ -280,7 +211,6 @@ $(document).ready(function() {
 				<a href="javascript:;"><span class="pagenum">4</span></a>
 				<a href="javascript:;"><span class="pagenum">5</span></a>
 				<a href="javascript:;" class="nextpage  pbtn"><img src="img/btn_nextpage.png" alt="다음 페이지로 이동"></a>
-				<a href="javascript:;" class="lastpage  pbtn"><img src="img/btn_lastpage.png" alt="마지막 페이지로 이동"></a>
 			</div>
 			<!-- //페이징처리영역 -->
 			<p class="btn_line">
