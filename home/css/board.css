@@ -338,3 +338,15 @@ textarea:-ms-input-placeholder { color: #999; } /* ms사 브라우저에 적용 
 	margin-top: 10px;
 }
 /* //게시판 글쓰기 폼 */
+@media all and (min-width:801px) {
+    /* 글쓰기 폼 스타일 */
+	.app_list .tit_lbl { width: 20%; }
+	.app_list .app_content {
+		width: 79%;
+		float: right;
+		border: 1px solid #ccc;
+	}
+	.btn_line {text-align: center;}
+	.appForm textarea {height: 230px;}
+	/* //글쓰기 폼 스타일 */
+}
