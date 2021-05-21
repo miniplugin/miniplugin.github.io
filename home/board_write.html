@@ -38,6 +38,36 @@
 		bsCustomFileInput.init();
 	});
 </script>
+<!-- 서머노트 웹에디터CSS 임포트 -->
+<link rel="stylesheet" href="/admin/plugins/summernote/summernote-bs4.min.css">
+<link rel="stylesheet" href="/admin/plugins/summernote/summernote.css">
+<!-- 서머노트 웹에디터JS 임포트 -->
+<script src="/admin/plugins/summernote/summernote.min.js"></script>
+<!-- 서머노트 웹에디터 실행(아래-개발자가 처리) -->
+<script>
+	$(document).ready(function(){
+		//$('#content_lbl').summernote();//기본실행. 이기본실을 개발자 커스터마이징 합니다.
+		$('#content_lbl').summernote({
+			height:150,
+			lang:'ko-KR',
+			placeholder:'글 내용을 입력해 주세요',
+			toolbar: [
+				['fontname',['fontname']],
+				['fontsize',['fontsize']],
+				['style',['bold','italic','underline']],
+				['color',['forecolor','color']],
+				['table',['table']],
+				['para',['ul','ol','paragraph']],
+				['height',['height']],
+				['insert',['link','video']],//'picture',
+				['view',['fullscreen','help']]
+			],
+			fontNames: ['Arial','Arial Black','맑은 고딕','궁서','Nanum Gothic'],
+			fontSizes: ['8','10','12','14','16','18','20','22','24','26','28','30'],
+			fontNamesIgnoreCheck: ['Nanum Gothic']
+		});
+	});
+</script>
 <style>
 /* 모바일용 게시판 스타일 */
 
@@ -174,35 +204,6 @@ $(document).ready(function() {
 </div>
 <!-- //메인콘텐츠영역 -->
 
-<!-- 서머노트 웹데이터 실행(아래-개발자가 처리) -->
-<script>
-	$(document).ready(function(){
-		//$('#content_lbl').summernote();//기본실행. 이기본실을 개발자 커스터마이징 합니다.
-		$('#content_lbl').summernote({
-			height:150,
-			lang:'ko-KR',
-			placeholder:'글 내용을 입력해 주세요',
-			toolbar: [
-				['fontname',['fontname']],
-				['fontsize',['fontsize']],
-				['style',['bold','italic','underline']],
-				['color',['forecolor','color']],
-				['table',['table']],
-				['para',['ul','ol','paragraph']],
-				['height',['height']],
-				['insert',['link','video']],//'picture',
-				['view',['fullscreen','help']]
-			],
-			fontNames: ['Arial','Arial Black','맑은 고딕','궁서'],
-			fontSizes: ['8','10','12','14','16','18','20','22','24','26','28','30']
-		});
-	});
-</script>
-<!-- 서머노트 웹에디터CSS 임포트 -->
-<link rel="stylesheet" href="/admin/plugins/summernote/summernote-bs4.min.css">
-<link rel="stylesheet" href="/admin/plugins/summernote/summernote.css">
-<!-- 서머노트 웹에디터JS 임포트 -->
-<script src="/admin/plugins/summernote/summernote.min.js"></script>
 	<!-- 푸터메뉴및사업자정보영역 -->
 	<footer>
 		<div class="foot_area box_inner">
