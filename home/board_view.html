@@ -35,9 +35,12 @@
 <style>
 /* 모바일용 댓글 스타일 */
 .row { margin:0px; }
-.timeline {
+.timeline, .card-default {
 	text-align: left;
 	margin: 0px 5px;
+}
+.bs-stepper-content {
+	padding: 20px 10px;
 }
 /* 테블릿용 메인페이지 스타일 지정(아래) 801px~무한대까지 재정의 */
 @media all and (min-width:801px) {
@@ -161,7 +164,38 @@ $(document).ready(function() {
 	<div class="row">
 		<div class="col-md-12">
 			<!-- 댓글 입력폼 -->
-
+			<div class="card-default">
+				<div class="card-header">
+				  <h3 class="card-title">댓글 쓰기</h3>
+				</div>
+				<div class="card-body p-0">
+				  <div class="bs-stepper linear">
+					<div class="bs-stepper-header" role="tablist">
+					  <div class="line"></div>
+					</div>
+					<div class="bs-stepper-content">
+					  <!-- your steps content here -->
+					  <div id="logins-part" class="content active dstepper-block" role="tabpanel" aria-labelledby="logins-part-trigger">
+						<div class="form-group">
+						  <label for="writer">작성자</label>
+						  <input type="text" class="form-control" id="writer" placeholder="작성자를 입력하세요">
+						</div>
+						<div class="form-group">
+						  <label for="reply_text">댓글내용</label>
+						  <input type="text" class="form-control" id="reply_text" placeholder="댓글내용을 입력하세요">
+						</div>
+					  </div>
+					  <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
+						<button type="button" class="btn btn-warning">댓글등록</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<!-- /.card-body -->
+				<div class="card-footer">
+				  아래 댓글리스트 버튼을 클릭하시면 댓글 목록이 출력이 됩니다.
+				</div>
+			  </div>
 			<!-- //댓글 입력폼 -->
 		</div>
 		<div class="col-md-12">
@@ -181,7 +215,7 @@ $(document).ready(function() {
 				  댓글 내용
 				</div>
 				<div class="timeline-footer">
-				  <a class="btn btn-primary btn-sm">수정</a>
+				  <a class="btn btn-primary btn-sm" data-toggle="modal">수정</a>
 				</div>
 			  </div>
 			</div>
@@ -225,6 +259,28 @@ $(document).ready(function() {
 	<p class="to_top"><a href="#wrap" class="s_point">TOP</a></p>
 </div>
 <!-- //하단퀵메뉴영역 -->
-
+<!-- 모달창(초기엔 숨긴상태-수정버튼을 클릭하면 나타나는 창) -->
+<div class="modal fade" id="modal-default">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="modal-header">
+			<h4 class="modal-title">Default Modal</h4>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body">
+			<p>One fine body&hellip;</p>
+		</div>
+		<div class="modal-footer justify-content-between">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
 </body>
 </html>
