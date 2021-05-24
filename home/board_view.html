@@ -33,8 +33,12 @@
 <!-- AdminLTE전용CSS코어 임포트 -->
 <link rel="stylesheet" href="/admin/dist/css/adminlte.min.css">
 <style>
-/* 모바일용 게시판 스타일 */
-
+/* 모바일용 댓글 스타일 */
+.row { margin:0px; }
+.timeline {
+	text-align: left;
+	margin: 0px 5px;
+}
 /* 테블릿용 메인페이지 스타일 지정(아래) 801px~무한대까지 재정의 */
 @media all and (min-width:801px) {
     
@@ -152,6 +156,42 @@ $(document).ready(function() {
         
     </div>
     <!-- //메인본문영역 -->
+
+	<!-- 댓글영역 -->
+	<div class="row">
+		<div class="col-md-12">
+			<!-- 댓글 입력폼 -->
+
+			<!-- //댓글 입력폼 -->
+		</div>
+		<div class="col-md-12">
+		  <!-- The time line -->
+		  <div class="timeline">
+			<!-- timeline time label -->
+			<div class="time-label">
+			  <span class="bg-red">댓글리스트[<span>1</span>]</span>
+			</div>
+			<!-- /.timeline-label -->
+			<!-- timeline item -->
+			<div>
+			  <i class="fas fa-envelope bg-blue"></i>
+			  <div class="timeline-item">
+				<h3 class="timeline-header">작성자명</h3>
+				<div class="timeline-body">
+				  댓글 내용
+				</div>
+				<div class="timeline-footer">
+				  <a class="btn btn-primary btn-sm">수정</a>
+				</div>
+			  </div>
+			</div>
+			<!-- END timeline item -->
+		  </div>
+		</div>
+		<!-- /.col -->
+	</div>
+	<!-- //댓글영역 -->
+
 </div>
 <!-- //메인콘텐츠영역 -->
 	
