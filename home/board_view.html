@@ -186,7 +186,7 @@ $(document).ready(function() {
 						</div>
 					  </div>
 					  <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
-						<button type="button" class="btn btn-warning">댓글등록</button>
+						<button type="button" class="btn btn-warning" id="btn_reply_write">댓글등록</button>
 					  </div>
 					</div>
 				  </div>
@@ -207,18 +207,26 @@ $(document).ready(function() {
 			</div>
 			<!-- /.timeline-label -->
 			<!-- timeline item -->
-			<div>
+			<!-- 댓글리스트를 자바스크립트의 빵틀(템플릿)을 만듭니다.  -->
+			<!-- 고전append함수를 사용하지 않고, handlebars라는 확장프로그램(아래) 임포트 -->
+			<!-- 장점은 기존 퍼블리셔가 만든태그를 그대로 사용가능 -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
+			<script id="template" type="text/x-handlebars-template">
+			{{#each .}}
+			<div class="div_template" data-rno="{{rno}}">
 			  <i class="fas fa-envelope bg-blue"></i>
 			  <div class="timeline-item">
-				<h3 class="timeline-header">작성자명</h3>
+				<h3 class="timeline-header">{{replyer}}</h3>
 				<div class="timeline-body">
-				  댓글 내용
+				  {{reply_text}}
 				</div>
 				<div class="timeline-footer">
-				  <a class="btn btn-primary btn-sm" data-toggle="modal">수정</a>
+				  <a class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-reply">수정</a>
 				</div>
 			  </div>
 			</div>
+			{{/each}}
+			</script>
 			<!-- END timeline item -->
 		  </div>
 		</div>
@@ -260,21 +268,22 @@ $(document).ready(function() {
 </div>
 <!-- //하단퀵메뉴영역 -->
 <!-- 모달창(초기엔 숨긴상태-수정버튼을 클릭하면 나타나는 창) -->
-<div class="modal fade" id="modal-default">
+<div class="modal fade" id="modal-reply">
 	<div class="modal-dialog">
 		<div class="modal-content">
 		<div class="modal-header">
-			<h4 class="modal-title">Default Modal</h4>
+			<h4 class="modal-title">작성자명</h4>
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 			</button>
 		</div>
 		<div class="modal-body">
-			<p>One fine body&hellip;</p>
+			<input class="form-control" type="text" name="modal_reply_text" id="modal_reply_text" value="댓글내용 출력">
 		</div>
-		<div class="modal-footer justify-content-between">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			<button type="button" class="btn btn-primary">Save changes</button>
+		<div class="modal-footer"><!-- justify-content-between:양쪽배분정렬 -->
+			<button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+			<button type="button" class="btn btn-primary">수정</button>
+			<button type="button" class="btn btn-danger">삭제</button>
 		</div>
 		</div>
 		<!-- /.modal-content -->
@@ -282,5 +291,23 @@ $(document).ready(function() {
 <!-- /.modal-dialog -->
 </div>
 <!-- /.modal -->
+<script>
+	$(document).ready(function(){
+		$('#btn_reply_write').click(function(){
+			// alert('댓글등록버튼');
+			$.ajax({
+				method:'get',
+				url:'./board_view.html',//RestAPI URL 입력
+				dataType:'text',
+				success:function(result) {
+					alert('RestAPI성공');
+				},
+				error:function() {
+					alert('RestAPI서버가 작동하지 않습니다.');
+				}
+			});
+		});
+	});
+</script>
 </body>
 </html>
