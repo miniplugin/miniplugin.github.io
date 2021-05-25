@@ -203,8 +203,13 @@ $(document).ready(function() {
 		  <div class="timeline">
 			<!-- timeline time label -->
 			<div class="time-label">
-			  <span class="bg-red" id="btn_reply_list">댓글리스트[<span>1</span>]</span>
+			  <span class="bg-red" data-toggle="collapse" href="#collapseReply" role="button" id="btn_reply_list">
+				  댓글리스트
+				  [<span>1</span>]
+			  </span>
 			</div>
+			<!-- 콜랩스 시작 -->
+			<div class="collapse" id="collapseReply">
 			<!-- time-label 이후 after요소로 템플릿결과가 여기에 출력됨. -->
 			<!-- /.timeline-label -->
 			<!-- timeline item -->
@@ -257,9 +262,10 @@ $(document).ready(function() {
 				</ul>
 			</div>
 		  	<!-- //페이징 처리 -->
-			<!-- END timeline item -->
+		    </div>
+		    <!-- //콜랩스 끝 -->
 		  </div>
-		  
+		  <!-- END timeline item -->
 		</div>
 		<!-- /.col -->
 	</div>
@@ -332,7 +338,26 @@ var printReplyList = function(data, templateData, target) {
 };
 	$(document).ready(function(){
 		$('#btn_reply_list').click(function(){
-			
+			$.ajax({
+				method:'get',
+				url:'./board_view.html',//RestAPI URL 입력
+				dataType:'text',
+				success:function(result) {
+					// alert('RestAPI성공');
+					result = [
+						{rno:2,bno:2,reply_text:'두번째 댓글입니다.',replyer:'관리자',reg_date:1601234512345},
+						{rno:1,bno:2,reply_text:'첫번째 댓글입니다.',replyer:'관리자',reg_date:1601234512345}
+					];
+					//자바스크립트는 함수기반 구조화된 언어
+					//위 result데이터를 #template에 바인시키는 함수호출(아래)
+					//함수의(인자=아규먼트=매개변수=파라미터)
+					//printReplyList(jsonDate, 바인딩(파싱)위치, 화면출력위치);
+					printReplyList(result, $('#template'), $('.time-label'));
+				},
+				error:function() {
+					alert('RestAPI서버가 작동하지 않습니다.');
+				}
+			});
 		});
 		$('#btn_reply_write').click(function(){
 			// alert('댓글등록버튼');
