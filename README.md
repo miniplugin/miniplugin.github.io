@@ -23,8 +23,8 @@
 - UI구현 ......위 에서 제작한 UI디자인 이용해서 프로그램을 입히게 됩니다.
 
 #### 20210525(화) 작업.
-- css: 계층:조부 > 부 > 본인(timnline) > 자식(collapse) > 손자(time-label) > 증손자
-- board_view.html 댓글 AdminLTE3의 페이징 UI 추가예정.
+- css: 계층:조부>부>본인(timnline)>자식(collapse)>손자(time-label)>증손자
+- board_view.html 댓글 AdminLTE3의 페이징 UI 추가OK.
 - 반응형 서브페이지들(로그인, 회원가입, 마이페이지).
 - 관리자단 AdminLTE적용.(회원관리CRUD, 게시판CRUD, 대시보드)
 - 어제 스프링 프로젝트에서 5교시에 자바기초 시작예정.
