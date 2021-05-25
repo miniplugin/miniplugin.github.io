@@ -186,7 +186,7 @@ $(document).ready(function() {
 						</div>
 					  </div>
 					  <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
-						<button type="button" class="btn btn-warning" id="btn_reply_write">댓글등록</button>
+						<button type="button" class="btn btn-warning" id="btn_reply_write" data-toggle="collapse" data-target="#collapseReply">댓글등록</button>
 					  </div>
 					</div>
 				  </div>
@@ -209,7 +209,7 @@ $(document).ready(function() {
 			  </span>
 			</div>
 			<!-- 콜랩스 시작 -->
-			<div class="collapse" id="collapseReply">
+			<div class="collapse timeline" id="collapseReply">
 			<!-- time-label 이후 after요소로 템플릿결과가 여기에 출력됨. -->
 			<!-- /.timeline-label -->
 			<!-- timeline item -->
@@ -334,7 +334,7 @@ var printReplyList = function(data, templateData, target) {
 	var template = Handlebars.compile(templateData.html());//템플릿을 태그로 변환
 	var html = template(data);//파싱처리
 	$('.div_template').remove();//기존 댓글데이터 누적을 방지
-	target.after(html);
+	target.prepend(html);
 };
 	$(document).ready(function(){
 		$('#btn_reply_list').click(function(){
@@ -352,7 +352,7 @@ var printReplyList = function(data, templateData, target) {
 					//위 result데이터를 #template에 바인시키는 함수호출(아래)
 					//함수의(인자=아규먼트=매개변수=파라미터)
 					//printReplyList(jsonDate, 바인딩(파싱)위치, 화면출력위치);
-					printReplyList(result, $('#template'), $('.time-label'));
+					printReplyList(result, $('#template'), $('#collapseReply'));
 				},
 				error:function() {
 					alert('RestAPI서버가 작동하지 않습니다.');
@@ -375,7 +375,7 @@ var printReplyList = function(data, templateData, target) {
 					//위 result데이터를 #template에 바인시키는 함수호출(아래)
 					//함수의(인자=아규먼트=매개변수=파라미터)
 					//printReplyList(jsonDate, 바인딩(파싱)위치, 화면출력위치);
-					printReplyList(result, $('#template'), $('.time-label'));
+					printReplyList(result, $('#template'), $('#collapseReply'));
 				},
 				error:function() {
 					alert('RestAPI서버가 작동하지 않습니다.');
