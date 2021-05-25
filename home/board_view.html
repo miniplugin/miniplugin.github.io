@@ -186,7 +186,7 @@ $(document).ready(function() {
 						</div>
 					  </div>
 					  <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
-						<button type="button" class="btn btn-warning" id="btn_reply_write" data-toggle="collapse" data-target="#collapseReply">댓글등록</button>
+						<button type="button" class="btn btn-warning" id="btn_reply_write">댓글등록</button>
 					  </div>
 					</div>
 				  </div>
@@ -366,8 +366,8 @@ var printReplyList = function(data, templateData, target) {
 				url:'./board_view.html',//RestAPI URL 입력
 				dataType:'text',
 				success:function(result) {
-					// alert('RestAPI성공');
 					result = [
+						{rno:3,bno:2,reply_text:'세번째 댓글입니다.',replyer:'관리자',reg_date:1601234512345},
 						{rno:2,bno:2,reply_text:'두번째 댓글입니다.',replyer:'관리자',reg_date:1601234512345},
 						{rno:1,bno:2,reply_text:'첫번째 댓글입니다.',replyer:'관리자',reg_date:1601234512345}
 					];
