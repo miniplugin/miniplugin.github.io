@@ -235,7 +235,7 @@ $(document).ready(function() {
 			<!-- 페이징 처리 -->
 			<div class="row">
 				<ul class="pagination" style="margin: 0 auto;">
-					<li class="paginate_button page-item previous disabled" id="example2_previous">
+					<!-- <li class="paginate_button page-item previous disabled" id="example2_previous">
 						<a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
 					</li>
 					<li class="paginate_button page-item active">
@@ -258,7 +258,7 @@ $(document).ready(function() {
 					</li>
 					<li class="paginate_button page-item next" id="example2_next">
 						<a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		  	<!-- //페이징 처리 -->
@@ -330,10 +330,23 @@ $(document).ready(function() {
 </div>
 <!-- /.modal -->
 <script>
-// 페이징처리 함수형 변수
+// 페이징처리 함수형 변수(아래)
 var printPagingList = function(pageVO, target) {
-//pageVO = 스프링에서 받은 json데이터, 변수3개 pageVO.prev(이전데이터가 있다면 true), pageVO.next(다음데이터 있다면 true), 
+//pageVO = 스프링에서 받은 json데이터, 변수3개 pageVO.prev(이전데이터가 있다면 true), pageVO.next(다음데이터 있다면 true), pageVO=5페이지로 가정
+	var pagination = '';//문자열 누적변수
+	//Previous 출력(아래)
+	pagination += '<li class="paginate_button page-item previous disabled" id="example2_previous">';
+	pagination += '<a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>';
+	pagination += '</li>';//pagination = pagination + '</li>';//여기 Previous
+
+	//Next 출력(아래)
+	pagination += '<li class="paginate_button page-item next" id="example2_next">';
+	pagination += '<a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a>';
+	pagination += '</li>';
+	$(target).append(pagination);
 };
+printPagingList(5, '.pagination');
+// 댓글리스트처리 함수형 변수(아래)
 var printReplyList = function(data, templateData, target) {
 	var template = Handlebars.compile(templateData.html());//템플릿을 태그로 변환
 	var html = template(data);//파싱처리
