@@ -203,7 +203,7 @@ $(document).ready(function() {
 		  <div class="timeline">
 			<!-- timeline time label -->
 			<div class="time-label">
-			  <span class="bg-red">댓글리스트[<span>1</span>]</span>
+			  <span class="bg-red" id="btn_reply_list">댓글리스트[<span>1</span>]</span>
 			</div>
 			<!-- time-label 이후 after요소로 템플릿결과가 여기에 출력됨. -->
 			<!-- /.timeline-label -->
@@ -226,8 +226,40 @@ $(document).ready(function() {
 			</div>
 			{{/each}}
 			</script>
+			
+			<!-- 페이징 처리 -->
+			<div class="row">
+				<ul class="pagination" style="margin: 0 auto;">
+					<li class="paginate_button page-item previous disabled" id="example2_previous">
+						<a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+					</li>
+					<li class="paginate_button page-item active">
+						<a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+					</li>
+					<li class="paginate_button page-item ">
+						<a href="#" aria-controls="example2" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+					</li>
+					<li class="paginate_button page-item ">
+						<a href="#" aria-controls="example2" data-dt-idx="3" tabindex="0" class="page-link">3</a>
+					</li>
+					<li class="paginate_button page-item ">
+						<a href="#" aria-controls="example2" data-dt-idx="4" tabindex="0" class="page-link">4</a>
+					</li>
+					<li class="paginate_button page-item ">
+						<a href="#" aria-controls="example2" data-dt-idx="5" tabindex="0" class="page-link">5</a>
+					</li>
+					<li class="paginate_button page-item ">
+						<a href="#" aria-controls="example2" data-dt-idx="6" tabindex="0" class="page-link">6</a>
+					</li>
+					<li class="paginate_button page-item next" id="example2_next">
+						<a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
+					</li>
+				</ul>
+			</div>
+		  	<!-- //페이징 처리 -->
 			<!-- END timeline item -->
 		  </div>
+		  
 		</div>
 		<!-- /.col -->
 	</div>
@@ -299,6 +331,9 @@ var printReplyList = function(data, templateData, target) {
 	target.after(html);
 };
 	$(document).ready(function(){
+		$('#btn_reply_list').click(function(){
+			
+		});
 		$('#btn_reply_write').click(function(){
 			// alert('댓글등록버튼');
 			$.ajax({
