@@ -330,6 +330,10 @@ $(document).ready(function() {
 </div>
 <!-- /.modal -->
 <script>
+// 페이징처리 함수형 변수
+var printPagingList = function(pageVO, target) {
+//pageVO = 스프링에서 받은 json데이터, 변수3개 pageVO.prev(이전데이터가 있다면 true), pageVO.next(다음데이터 있다면 true), 
+};
 var printReplyList = function(data, templateData, target) {
 	var template = Handlebars.compile(templateData.html());//템플릿을 태그로 변환
 	var html = template(data);//파싱처리
