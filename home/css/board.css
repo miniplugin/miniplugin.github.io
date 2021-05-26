@@ -315,7 +315,8 @@ input::placeholder { color: #999; } /* IE(Internet Explore)브라우저용 스�
 }
 .app_content input {
 	border: none;
-	width: inherit;/* 부모 영역(브라우저기본값)의 input태그의 너비값을 상속 받음=width값을 초기화한다. */
+	/* width: inherit; */
+    /* 부모 영역(브라우저기본값)의 input태그의 너비값을 상속 받음=width값을 초기화한다. */
 	box-sizing: border-box;
 	display: inline-block;
 	height: 45px;
