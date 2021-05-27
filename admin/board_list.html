@@ -170,17 +170,17 @@
               <!-- 내용검색 폼 -->
               <div class="input-group input-group-md">
                 <form name="form_search" action="board_list.html" method="GET" class="form-horizontal">
-                  <div class="input-group-append float-right" style="width: inherit;">
-                      <button type="submit" class="btn btn-default">
-                        <i class="fas fa-search"></i>
-                      </button>
-                  </div>
-                  <input type="text" name="table_search" class="form-control float-right" placeholder="Search" style="width: inherit;">
-                  <select class="form-control float-right" style="width: inherit;">
+                  <select class="form-control float-left" style="width: inherit;">
                     <option>전체</option>
                     <option>제목</option>
                     <option>내용</option>
-                  </select>                
+                  </select>  
+                  <input type="text" name="table_search" class="form-control float-left" placeholder="Search" style="width: inherit;">
+                  <div class="input-group-append float-left" style="width: inherit;">
+                    <button type="submit" class="btn btn-default">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>                                
                 </form>
               </div>
               <!-- //내용검색 폼 -->
