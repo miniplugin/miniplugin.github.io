@@ -180,7 +180,8 @@
           </div>
           <!-- /.card-header -->
           <div class="card-body table-responsive p-0">
-            <table class="table table-hover text-nowrap">
+            <table class="table table-hover">
+              <!-- 줄바꿈않할때 다음 클래스추가 text-nowrap  -->
               <thead>
                 <tr>
                   <th>ID</th>
@@ -223,9 +224,12 @@
             </table>
           </div>
           <!-- /.card-body -->
-          <!-- card-footer -->
-          <div class="card-footer">
-            <ul class="pagination">
+        </div>
+        <!-- //콘텐츠 내용 -->
+        <!-- 페이징 처리 -->
+        <div class="col-12 text-right">
+          <button class="btn btn-primary">글쓰기</button>
+          <ul class="pagination justify-content-center">
               <li class="paginate_button page-item previous disabled" id="example2_previous">
                 <a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
               </li>
@@ -250,11 +254,9 @@
               <li class="paginate_button page-item next" id="example2_next">
                 <a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
               </li>
-            </ul>
-          </div>
-          <!-- //card-footer -->
+          </ul>
         </div>
-        <!-- //콘텐츠 내용 -->
+        <!-- //페이징 처리 -->
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
