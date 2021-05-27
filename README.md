@@ -4,11 +4,12 @@
 - 피곤할때, 오라클DB(SQL디벨러퍼개발환경) Ansi-SQL(표준SQL)기본언어실습진행CRUD.
 - 2달째부터(백엔드), 주로 스프링으로 실습이 진행(납품용-이력서포트폴리오용).
 - VS code에서 만든 UI를 이클립스에서 JSP로 변경 한 후 스프링웹프로젝트를 진행합니다.
-- 관리자단 AdminLTE적용-스프링시간.(회원관리CRUD바로jsp, 게시판생성관리CRUD바로jsp)
 
 #### 20210528(금) 작업예정.
 - 관리자단 admin/board_write.html, board_view.html(댓글Ajax처리)
 - 대시보드 home.html (최근 회원가입정보, 최근 게시물정보)
+- 관리자단 AdminLTE적용-스프링시간|UI디자인시간 선택 후 아래 작업진행예정
+- (회원관리CRUD-html, 게시판생성관리CRUD-html)
 - 이클립스로 작업한 html 내용을 -> resources 폴더(admin,home,root파일까지)로 배치
 - 스프링 작업의 시작
 
