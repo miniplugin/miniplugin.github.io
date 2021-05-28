@@ -145,7 +145,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">{게시판변수명} 리스트</h1>
+            <h1 class="m-0">{게시판변수명} 글쓰기</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -162,109 +162,47 @@
     <section class="content">
       <div class="container-fluid">
         <!-- 콘텐츠 내용 -->
-        <div class="card">
+        <div class="card card-primary">
           <div class="card-header">
-            <h3 class="card-title">목록</h3>
-
-            <div class="card-tools">
-              <!-- 내용검색 폼 -->
-              <div class="input-group input-group-md">
-                <form name="form_search" action="board_list.html" method="GET" class="form-horizontal">
-                  <select class="form-control float-left" style="width: inherit;">
-                    <option>전체</option>
-                    <option>제목</option>
-                    <option>내용</option>
-                  </select>  
-                  <input type="text" name="table_search" class="form-control float-left" placeholder="Search" style="width: inherit;">
-                  <div class="input-group-append float-left" style="width: inherit;">
-                    <button type="submit" class="btn btn-default">
-                      <i class="fas fa-search"></i>
-                    </button>
-                  </div>                                
-                </form>
-              </div>
-              <!-- //내용검색 폼 -->
-            </div>
+            <h3 class="card-title">Quick Example</h3>
           </div>
           <!-- /.card-header -->
-          <div class="card-body table-responsive p-0">
-            <table class="table table-hover">
-              <!-- 줄바꿈않할때 다음 클래스추가 text-nowrap  -->
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>User</th>
-                  <th>Date</th>
-                  <th>Status</th>
-                  <th>Reason</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>183</td>
-                  <td>John Doe</td>
-                  <td>11-7-2014</td>
-                  <td><span class="tag tag-success">Approved</span></td>
-                  <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                </tr>
-                <tr>
-                  <td>219</td>
-                  <td>Alexander Pierce</td>
-                  <td>11-7-2014</td>
-                  <td><span class="tag tag-warning">Pending</span></td>
-                  <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                </tr>
-                <tr>
-                  <td>657</td>
-                  <td>Bob Doe</td>
-                  <td>11-7-2014</td>
-                  <td><span class="tag tag-primary">Approved</span></td>
-                  <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                </tr>
-                <tr>
-                  <td>175</td>
-                  <td>Mike Doe</td>
-                  <td>11-7-2014</td>
-                  <td><span class="tag tag-danger">Denied</span></td>
-                  <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <!-- /.card-body -->
+          <!-- form start -->
+          <form>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="exampleInputFile">
+                    <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                  </div>
+                  <div class="input-group-append">
+                    <span class="input-group-text">Upload</span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+            </div>
+            <!-- /.card-body -->
+
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
         </div>
         <!-- //콘텐츠 내용 -->
-        <!-- 페이징 처리 -->
-        <div class="col-12 text-right">
-          <a href="board_write.html" class="btn btn-primary mb-3">글쓰기</a>
-          <ul class="pagination justify-content-center">
-              <li class="paginate_button page-item previous disabled" id="example2_previous">
-                <a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
-              </li>
-              <li class="paginate_button page-item active">
-                <a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0" class="page-link">1</a>
-              </li>
-              <li class="paginate_button page-item ">
-                <a href="#" aria-controls="example2" data-dt-idx="2" tabindex="0" class="page-link">2</a>
-              </li>
-              <li class="paginate_button page-item ">
-                <a href="#" aria-controls="example2" data-dt-idx="3" tabindex="0" class="page-link">3</a>
-              </li>
-              <li class="paginate_button page-item ">
-                <a href="#" aria-controls="example2" data-dt-idx="4" tabindex="0" class="page-link">4</a>
-              </li>
-              <li class="paginate_button page-item ">
-                <a href="#" aria-controls="example2" data-dt-idx="5" tabindex="0" class="page-link">5</a>
-              </li>
-              <li class="paginate_button page-item ">
-                <a href="#" aria-controls="example2" data-dt-idx="6" tabindex="0" class="page-link">6</a>
-              </li>
-              <li class="paginate_button page-item next" id="example2_next">
-                <a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
-              </li>
-          </ul>
-        </div>
-        <!-- //페이징 처리 -->
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
