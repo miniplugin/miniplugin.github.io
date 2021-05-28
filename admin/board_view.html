@@ -178,30 +178,135 @@
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
-                <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <br>
+                {변수출력}
               </div>
               <div class="form-group">
                 <label for="exampleInputFile">File input</label>
                 <div class="input-group">
                   <div class="custom-file">
-                    <input name="file" type="file" class="custom-file-input" id="exampleInputFile">
-                    <label class="custom-file-label" for="exampleInputFile">파일선택</label>
+                    {첨부파일다운로드}
                   </div>
                 </div>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
               </div>
             </div>
             <!-- /.card-body -->
 
             <div class="card-footer text-right">
-              <button type="submit" class="btn btn-primary">등록</button>
+              <button type="submit" class="btn btn-primary">수정</button>
+              <button type="button" class="btn btn-danger">삭제</button>
               <a href="board_list.html" class="btn btn-default">목록</a>
             </div>
           </form>
         </div>
+        <!-- 댓글 입력폼 -->
+        <div class="col-md-12">
+          <div class="card-default">
+            <div class="card-header">
+              <h3 class="card-title">댓글 쓰기</h3>
+            </div>
+            <div class="card-body p-0">
+              <div class="bs-stepper linear">
+              <div class="bs-stepper-header" role="tablist">
+                <div class="line"></div>
+              </div>
+              <div class="bs-stepper-content">
+                <!-- your steps content here -->
+                <div id="logins-part" class="content active dstepper-block" role="tabpanel" aria-labelledby="logins-part-trigger">
+                <div class="form-group">
+                  <label for="writer">작성자</label>
+                  <input type="text" class="form-control" id="writer" placeholder="작성자를 입력하세요">
+                </div>
+                <div class="form-group">
+                  <label for="reply_text">댓글내용</label>
+                  <input type="text" class="form-control" id="reply_text" placeholder="댓글내용을 입력하세요">
+                </div>
+                </div>
+                <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
+                <button type="button" class="btn btn-warning" id="btn_reply_write">댓글등록</button>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+              아래 댓글리스트 버튼을 클릭하시면 댓글 목록이 출력이 됩니다.
+            </div>
+            </div>
+        </div>
+        <!-- //댓글 입력폼 -->
+        <!-- 댓글 타임라인 -->
+        <div class="col-md-12">
+          <!-- The time line -->
+          <div class="timeline">
+          <!-- timeline time label -->
+          <div class="time-label">
+            <span class="bg-red" data-toggle="collapse" href="#collapseReply" role="button" id="btn_reply_list">
+              댓글리스트
+              [<span>1</span>]
+            </span>
+          </div>
+          <!-- 콜랩스 시작 -->
+          <div class="collapse timeline" id="collapseReply">
+          <!-- time-label 이후 after요소로 템플릿결과가 여기에 출력됨. -->
+          <!-- /.timeline-label -->
+          <!-- timeline item -->
+          <!-- 댓글리스트를 자바스크립트의 빵틀(템플릿)을 만듭니다.  -->
+          <!-- 고전append함수를 사용하지 않고, handlebars라는 확장프로그램(아래) 임포트 -->
+          <!-- 장점은 기존 퍼블리셔가 만든태그를 그대로 사용가능 -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
+          <script id="template" type="text/x-handlebars-template">
+          {{#each .}}
+          <div class="div_template" data-rno="{{rno}}">
+            <i class="fas fa-envelope bg-blue"></i>
+            <div class="timeline-item">
+            <h3 class="timeline-header">{{replyer}}</h3>
+            <div class="timeline-body">{{reply_text}}</div>
+            <div class="timeline-footer">
+              <a class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-reply">수정</a>
+            </div>
+            </div>
+          </div>
+          {{/each}}
+          </script>
+          
+            <!-- 페이징 처리 -->
+            <div class="row">
+              <ul class="pagination" style="margin: 0 auto;">
+                <!-- <li class="paginate_button page-item previous disabled" id="example2_previous">
+                  <a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                </li>
+                <li class="paginate_button page-item active">
+                  <a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                </li>
+                <li class="paginate_button page-item ">
+                  <a href="#" aria-controls="example2" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+                </li>
+                <li class="paginate_button page-item ">
+                  <a href="#" aria-controls="example2" data-dt-idx="3" tabindex="0" class="page-link">3</a>
+                </li>
+                <li class="paginate_button page-item ">
+                  <a href="#" aria-controls="example2" data-dt-idx="4" tabindex="0" class="page-link">4</a>
+                </li>
+                <li class="paginate_button page-item ">
+                  <a href="#" aria-controls="example2" data-dt-idx="5" tabindex="0" class="page-link">5</a>
+                </li>
+                <li class="paginate_button page-item ">
+                  <a href="#" aria-controls="example2" data-dt-idx="6" tabindex="0" class="page-link">6</a>
+                </li>
+                <li class="paginate_button page-item next" id="example2_next">
+                  <a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
+                </li> -->
+              </ul>
+            </div>
+            <!-- //페이징 처리 -->
+            </div>
+            <!-- //콜랩스 끝 -->
+          </div>
+          <!-- END timeline item -->
+        </div>
+        <!-- //댓글 타임라인 -->
+
         <!-- //콘텐츠 내용 -->
       </div><!-- /.container-fluid -->
     </section>
@@ -245,5 +350,79 @@
 <script src="dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes 오른쪽메뉴-로그아웃사용 코어: 사용안함. -->
 <!-- <script src="dist/js/demo.js"></script> -->
+<script>
+var printReplyList = function(data, templateData, target) {
+  //result json데이터를 templateData에 파싱(아래)
+  var template = Handlebars.compile(templateData.html());//템플릿을 태그로 변환
+	var html = template(data);//파싱처리
+	$('.div_template').remove();//기존 댓글데이터 누적을 방지 target안쪽의 자식만지움
+	target.prepend(html);
+};
+var printPagingList = function(pageVO, target) {
+  //스프링RestAPI서버에서 받은 pageVO 오브젝트 target에 파싱합니다(아래)
+  $(target).html('');// tartget 의 내용만 지우고, target은 남아있음.
+//pageVO = 스프링에서 받은 json데이터, 변수3개 pageVO.prev(이전데이터가 있다면 true), pageVO.next(다음데이터 있다면 true), pageVO=5페이지로 가정
+	var pagination = '';//문자열 누적변수
+	//Previous 출력(아래)
+	pagination += '<li class="paginate_button page-item previous disabled" id="example2_previous">';
+	pagination += '<a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>';
+	pagination += '</li>';//pagination = pagination + '</li>';//여기 Previous
+	var active = '';
+	for(var i=0; i<pageVO; i++) {
+		if(i==0) { active = 'active'; } else { active = ''; }
+		pagination += '<li class="paginate_button page-item '+active+'">';
+		pagination += '<a href="#" aria-controls="example2" data-dt-idx="6" tabindex="0" class="page-link">'+(i+1)+'</a>';
+		pagination += '</li>';
+	}
+	//Next 출력(아래)
+	pagination += '<li class="paginate_button page-item next" id="example2_next">';
+	pagination += '<a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a>';
+	pagination += '</li>';
+	$(target).append(pagination);
+};
+// 댓글리스트+댓글등록 버튼 클릭액션으로 댓글 리스트를 출력
+$(document).ready(function(){
+  $('#btn_reply_write').click(function(){
+    $.ajax({
+      method:'get',
+      url:'board_view.html',
+      dataType:'text',
+      success:function(result) {
+        // alert('RestApi성공');
+        result = [
+            {rno:3,bno:2,reply_text:'세번째 댓글입니다.',replyer:'관리자',reg_date:1601234512345},
+            {rno:2,bno:2,reply_text:'두번째 댓글입니다.',replyer:'관리자',reg_date:1601234512345},
+						{rno:1,bno:2,reply_text:'첫번째 댓글입니다.',replyer:'관리자',reg_date:1601234512345}
+					];
+        printReplyList(result,$('#template'),$('#collapseReply'));
+        printPagingList(6, '.pagination');
+      },
+      error:function() {
+        alert('RestApi서버가 작동하지 않습니다.');
+      }
+    });
+  });
+  $('#btn_reply_list').click(function(){
+    $.ajax({
+      method:'get',
+      url:'board_view.html',
+      dataType:'text',
+      success:function(result) {
+        // alert('RestApi성공');
+        result = [
+						{rno:2,bno:2,reply_text:'두번째 댓글입니다.',replyer:'관리자',reg_date:1601234512345},
+						{rno:1,bno:2,reply_text:'첫번째 댓글입니다.',replyer:'관리자',reg_date:1601234512345}
+					];
+        printReplyList(result,$('#template'),$('#collapseReply'));
+        printPagingList(5, '.pagination');
+      },
+      error:function() {
+        alert('RestApi서버가 작동하지 않습니다.');
+      }
+    });
+  });
+});
+</script>
+
 </body>
 </html>
