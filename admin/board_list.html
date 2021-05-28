@@ -170,7 +170,7 @@
               <!-- 내용검색 폼 -->
               <div class="input-group input-group-md">
                 <form name="form_search" action="board_list.html" method="GET" class="form-horizontal">
-                  <select class="form-control float-left" style="width: inherit;">
+                  <select name="search_type" class="form-control float-left" style="width: inherit;">
                     <option>전체</option>
                     <option>제목</option>
                     <option>내용</option>
@@ -192,15 +192,16 @@
               <!-- 줄바꿈않할때 다음 클래스추가 text-nowrap  -->
               <thead>
                 <tr>
-                  <th>ID</th>
-                  <th>User</th>
-                  <th>Date</th>
-                  <th>Status</th>
-                  <th>Reason</th>
+                  <th class="text-center">ID</th>
+                  <th class="text-center">User</th>
+                  <th class="text-center">Date</th>
+                  <th class="text-center">Status</th>
+                  <th class="text-center">Reason</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <!-- 아래 링크주소에 jsp에서 프로그램처리예정 -->
+                <tr style="cursor: pointer;" onclick="location.replace('board_view.html?bno=183');">
                   <td>183</td>
                   <td>John Doe</td>
                   <td>11-7-2014</td>

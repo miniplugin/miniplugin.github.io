@@ -145,7 +145,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">{게시판변수명} 글쓰기</h1>
+            <h1 class="m-0">{게시판변수명} 상세보기</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -164,16 +164,17 @@
         <!-- 콘텐츠 내용 -->
         <div class="card card-primary">
           <div class="card-header">
-            <h3 class="card-title">등록</h3>
+            <h3 class="card-title">보기</h3>
           </div>
           <!-- /.card-header -->
           <!-- form start -->
           <!-- 첨부파일을 전송할때 enctype=필수 없으면, 첨부파일이 전송X -->
-          <form name="form_write" action="board_write.html" enctype="multipart/form-data">
+          <form name="form_view" action="board_write.html" enctype="multipart/form-data">
             <div class="card-body">
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <br>
+                {변수출력}
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
