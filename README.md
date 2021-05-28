@@ -6,13 +6,14 @@
 - VS code에서 만든 UI를 이클립스에서 JSP로 변경 한 후 스프링웹프로젝트를 진행합니다.
 
 #### 20210528(금) 작업.
-- 소스 인스펙트(소스분석);
+- UI트렌드용어: 카드(트럼프)UI, 뱃지(명찰), 리본(이벤트표시)
+- 소스 인스펙션(소스분석);
 - 데이터를 전송할때 사용 문장=쿼리스트링(QueryString)의 시작은 ?: ?키=value&키=value
 - 뒤로가기 허용하면, 게시물 테러가 가능합니다.
 - 뒤로가기를 허용하지 않게 페이지를 이동하는 방식(Js에서는 location.replace함수사용)
 - 뒤로가기를 허용하는 함수(Js에서는 location.href = '' 사용)
-- 관리자단 admin/board_write.html, board_view.html(댓글Ajax처리)
-- 대시보드 home.html (최근 회원가입정보, 최근 게시물정보)
+- 관리자단 admin/board_write.html, board_view.html(댓글Ajax처리)OK.
+- 대시보드 home.html (최근 회원가입정보, 최근 게시물정보) OK.
 - 관리자단 AdminLTE적용-스프링시간|UI디자인시간 선택 후 아래 작업진행예정
 - (회원관리CRUD-html, 게시판생성관리CRUD-html)
 - 이클립스로 작업한 html 내용을 -> resources 폴더(admin,home,root파일까지)로 배치
