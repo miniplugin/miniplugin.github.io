@@ -172,17 +172,32 @@
           <form name="form_view" action="board_write.html" enctype="multipart/form-data">
             <div class="card-body">
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <label for="exampleInputEmail1">제목</label>
                 <br>
                 {변수출력}
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
+                <label for="exampleInputPassword1">내용</label>
                 <br>
                 {변수출력}
               </div>
               <div class="form-group">
-                <label for="exampleInputFile">File input</label>
+                <label for="exampleInputPassword1">작성자</label>
+                <br>
+                {변수출력}
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">조회수</label>
+                <br>
+                {변수출력}
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">작성일</label>
+                <br>
+                {변수출력}
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">첨부파일</label>
                 <div class="input-group">
                   <div class="custom-file">
                     {첨부파일다운로드}
@@ -214,8 +229,8 @@
                 <!-- your steps content here -->
                 <div id="logins-part" class="content active dstepper-block" role="tabpanel" aria-labelledby="logins-part-trigger">
                 <div class="form-group">
-                  <label for="writer">작성자</label>
-                  <input type="text" class="form-control" id="writer" placeholder="작성자를 입력하세요">
+                  <label for="replyer">작성자</label>
+                  <input type="text" class="form-control" id="replyer" placeholder="작성자를 입력하세요">
                 </div>
                 <div class="form-group">
                   <label for="reply_text">댓글내용</label>
@@ -332,6 +347,31 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
+<!-- 모달창(초기엔 숨긴상태-수정버튼을 클릭하면 나타나는 창) -->
+<div class="modal fade" id="modal-reply">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="modal-header">
+			<h4 class="modal-title">작성자명</h4>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body">
+			<input class="form-control" type="text" name="modal_reply_text" id="modal_reply_text" value="댓글내용 출력">
+		</div>
+		<div class="modal-footer"><!-- justify-content-between:양쪽배분정렬 -->
+			<button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+			<button type="button" class="btn btn-primary">수정</button>
+			<button type="button" class="btn btn-danger">삭제</button>
+			<input type="hidden" id="rno" name="rno">
+		</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
 <!-- jQuery 제이쿼리 코어 -->
 <script src="plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 제이쿼리 UI코어 -->
@@ -423,6 +463,15 @@ $(document).ready(function(){
   });
 });
 </script>
-
+<script>
+// 댓글 리스트에서 수정 버튼클릭시 현재 선택한 값을 모달창에 보여주는 것을 구현(아래)
+$(document).ready(function(){
+  $('.timeline').on("click", '.div_template',function(){
+    $('#rno').val($(this).attr('data-rno'));
+    $('#modal_reply_text').val($(this).find('.timeline-body').text());
+    $('.modal-title').html($(this).find('.timeline-header').text());
+  });
+});
+</script>
 </body>
 </html>
