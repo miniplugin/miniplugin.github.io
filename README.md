@@ -6,7 +6,7 @@
 - VS code에서 만든 UI를 이클립스에서 JSP로 변경 한 후 스프링웹프로젝트를 진행합니다.
 
 #### 20210601(화) 작업예정.
-- ERD기준으로 게시판UI 마무리합니다.
+- ERD기준으로 게시판UI 마무리합니다.-board_write.html 부터 시작
 - 관리자단 AdminLTE적용-스프링시간|UI디자인시간 선택 후 아래 작업진행예정
 - (회원관리CRUD-html, 게시판생성관리CRUD-html)
 - 이클립스로 작업한 html 내용을 -> resources 폴더(admin,home,root파일까지)로 배치
