@@ -1,0 +1,596 @@
+[
+    {
+        "wlobscd": "1007615",
+        "damage_info": [
+            {
+                "road_name": "1번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150001"
+            }
+        ]
+    },
+    {
+        "wlobscd": "1004693",
+        "damage_info": [
+            {
+                "road_name": "2번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150002"
+            }
+        ]
+    },
+    {
+        "wlobscd": "2022610",
+        "damage_info": [
+            {
+                "road_name": "3번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150003"
+            }
+        ]
+    },
+    {
+        "wlobscd": "4009610",
+        "damage_info": [
+            {
+                "road_name": "4번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150004"
+            }
+        ]
+    },
+    {
+        "wlobscd": "4004690",
+        "damage_info": [
+            {
+                "road_name": "5번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150005"
+            }
+        ]
+    },
+    {
+        "wlobscd": "4005670",
+        "damage_info": [
+            {
+                "road_name": "6번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150006"
+            }
+        ]
+    },
+    {
+        "wlobscd": "4004690",
+        "damage_info": [
+            {
+                "road_name": "7번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150007"
+            }
+        ]
+    },
+    {
+        "wlobscd": "2007660",
+        "damage_info": [
+            {
+                "road_name": "8번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150008"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3012602",
+        "damage_info": [
+            {
+                "road_name": "9번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150009"
+            }
+        ]
+    },
+    {
+        "wlobscd": "2011650",
+        "damage_info": [
+            {
+                "road_name": "11번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150001"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3101685",
+        "damage_info": [
+            {
+                "road_name": "12번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150002"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3012620",
+        "damage_info": [
+            {
+                "road_name": "13번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150003"
+            }
+        ]
+    },
+    {
+        "wlobscd": "1007635",
+        "damage_info": [
+            {
+                "road_name": "14번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150004"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3101625",
+        "damage_info": [
+            {
+                "road_name": "15번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150005"
+            }
+        ]
+    },
+    {
+        "wlobscd": "2009620",
+        "damage_info": [
+            {
+                "road_name": "16번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150006"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3011665",
+        "damage_info": [
+            {
+                "road_name": "17번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150007"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3012675",
+        "damage_info": [
+            {
+                "road_name": "18번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150008"
+            }
+        ]
+    },
+    {
+        "wlobscd": "2007660",
+        "damage_info": [
+            {
+                "road_name": "19번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150009"
+            }
+        ]
+    },
+    {
+        "wlobscd": "2004680",
+        "damage_info": [
+            {
+                "road_name": "111번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150001"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3011645",
+        "damage_info": [
+            {
+                "road_name": "112번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150002"
+            }
+        ]
+    },
+    {
+        "wlobscd": "4002640",
+        "damage_info": [
+            {
+                "road_name": "113번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150003"
+            }
+        ]
+    },
+    {
+        "wlobscd": "2004635",
+        "damage_info": [
+            {
+                "road_name": "114번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150004"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3014610",
+        "damage_info": [
+            {
+                "road_name": "115번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150005"
+            }
+        ]
+    },
+    {
+        "wlobscd": "1101635",
+        "damage_info": [
+            {
+                "road_name": "116번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150006"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3012620",
+        "damage_info": [
+            {
+                "road_name": "117번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150007"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3101685",
+        "damage_info": [
+            {
+                "road_name": "118번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150008"
+            }
+        ]
+    },
+    {
+        "wlobscd": "1007615",
+        "damage_info": [
+            {
+                "road_name": "119번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150009"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3012602",
+        "damage_info": [
+            {
+                "road_name": "121번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150001"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3012675",
+        "damage_info": [
+            {
+                "road_name": "122번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150002"
+            }
+        ]
+    },
+    {
+        "wlobscd": "2004680",
+        "damage_info": [
+            {
+                "road_name": "123번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150003"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3011665",
+        "damage_info": [
+            {
+                "road_name": "124번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150004"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3014610",
+        "damage_info": [
+            {
+                "road_name": "125번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150005"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3004690",
+        "damage_info": [
+            {
+                "road_name": "126번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150006"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3101625",
+        "damage_info": [
+            {
+                "road_name": "127번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150007"
+            }
+        ]
+    },
+    {
+        "wlobscd": "2005660",
+        "damage_info": [
+            {
+                "road_name": "128번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150008"
+            }
+        ]
+    },
+    {
+        "wlobscd": "1004693",
+        "damage_info": [
+            {
+                "road_name": "129번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150009"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3011645",
+        "damage_info": [
+            {
+                "road_name": "131번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150001"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3009680",
+        "damage_info": [
+            {
+                "road_name": "132번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150002"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3009670",
+        "damage_info": [
+            {
+                "road_name": "133번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150003"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3013670",
+        "damage_info": [
+            {
+                "road_name": "134번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150004"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3009680",
+        "damage_info": [
+            {
+                "road_name": "135번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150005"
+            }
+        ]
+    },
+    {
+        "wlobscd": "2005660",
+        "damage_info": [
+            {
+                "road_name": "136번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150006"
+            }
+        ]
+    },
+    {
+        "wlobscd": "1004693",
+        "damage_info": [
+            {
+                "road_name": "137번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150007"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3301670",
+        "damage_info": [
+            {
+                "road_name": "138번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150008"
+            }
+        ]
+    },
+    {
+        "wlobscd": "5002690",
+        "damage_info": [
+            {
+                "road_name": "139번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150009"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3301670",
+        "damage_info": [
+            {
+                "road_name": "141번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150001"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3301665",
+        "damage_info": [
+            {
+                "road_name": "142번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150002"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3013670",
+        "damage_info": [
+            {
+                "road_name": "143번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150003"
+            }
+        ]
+    },
+    {
+        "wlobscd": "4002640",
+        "damage_info": [
+            {
+                "road_name": "144번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150004"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3009670",
+        "damage_info": [
+            {
+                "road_name": "145번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150005"
+            }
+        ]
+    },
+    {
+        "wlobscd": "5002650",
+        "damage_info": [
+            {
+                "road_name": "146번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150006"
+            }
+        ]
+    },
+    {
+        "wlobscd": "3302658",
+        "damage_info": [
+            {
+                "road_name": "147번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150007"
+            }
+        ]
+    },
+    {
+        "wlobscd": "1018655",
+        "damage_info": [
+            {
+                "road_name": "148번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150008"
+            }
+        ]
+    },
+    {
+        "wlobscd": "1018655",
+        "damage_info": [
+            {
+                "road_name": "149번도로",
+                "road_lat": "",
+                "road_lon": "",
+                "road_date": "202207150009"
+            }
+        ]
+    }
+]
