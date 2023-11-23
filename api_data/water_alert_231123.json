@@ -126,21 +126,5 @@
     "kind": "홍수주의보 발령",
     "no": "홍수예보 제 2023-38 호",
     "hrf": 10
-  },
-  {
-    "ancdt": "",
-    "wlobscd": "",
-    "agcnm": "",
-    "obsnm": "",
-    "addr": "",
-    "etcaddr": "",
-    "lon": "",
-    "lat": "",
-    "sttcurhgt": "",
-    "sttfctdt": "",
-    "sttfcthgt": "",
-    "kind": "",
-    "no": "",
-    "hrf": ""
   }
 ]
