@@ -1,0 +1,82 @@
+[
+  {
+    "ancdt": 202311301430,
+    "wlobscd": 1018655,
+    "agcnm": "환경부",
+    "sttcurhgt": 4.04,
+    "sttfctdt": 202311301500,
+    "sttfcthgt": 5.15,
+    "kind": "홍수주의보 발령",
+    "no": "홍수예보 제 2023-31 호"
+  },
+  {
+    "ancdt": 202311301430,
+    "wlobscd": 1018658,
+    "agcnm": "환경부",
+    "sttcurhgt": 2.42,
+    "sttfctdt": 202311301500,
+    "sttfcthgt": 3.62,
+    "kind": "홍수주의보 발령",
+    "no": "홍수예보 제 2023-32 호"
+  },
+  {
+    "ancdt": 202311301430,
+    "wlobscd": 1018662,
+    "agcnm": "환경부",
+    "sttcurhgt": 2.93,
+    "sttfctdt": 202311301500,
+    "sttfcthgt": 4.37,
+    "kind": "홍수경보 발령",
+    "no": "홍수예보 제 2023-33 호"
+  },
+  {
+    "ancdt": 202311301430,
+    "wlobscd": 1018669,
+    "agcnm": "환경부",
+    "sttcurhgt": 4.21,
+    "sttfctdt": 202311301500,
+    "sttfcthgt": 5.45,
+    "kind": "홍수심각 발령",
+    "no": "홍수예보 제 2023-34 호"
+  },
+  {
+    "ancdt": 202311301430,
+    "wlobscd": 1018670,
+    "agcnm": "환경부",
+    "sttcurhgt": 3.39,
+    "sttfctdt": 202311301500,
+    "sttfcthgt": 4.71,
+    "kind": "홍수심각 발령",
+    "no": "홍수예보 제 2023-35 호"
+  },
+  {
+    "ancdt": 202311301430,
+    "wlobscd": 1018675,
+    "agcnm": "환경부",
+    "sttcurhgt": 4.17,
+    "sttfctdt": 202311301500,
+    "sttfcthgt": 5.42,
+    "kind": "홍수경보 발령",
+    "no": "홍수예보 제 2023-36 호"
+  },
+  {
+    "ancdt": 202311301430,
+    "wlobscd": 1018680,
+    "agcnm": "환경부",
+    "sttcurhgt": 4.95,
+    "sttfctdt": 202311301500,
+    "sttfcthgt": 6.8,
+    "kind": "홍수경보 발령",
+    "no": "홍수예보 제 2023-37 호"
+  },
+  {
+    "ancdt": 202311301430,
+    "wlobscd": 1018683,
+    "agcnm": "환경부",
+    "sttcurhgt": 2,
+    "sttfctdt": 202311301500,
+    "sttfcthgt": 3.25,
+    "kind": "홍수주의보 발령",
+    "no": "홍수예보 제 2023-38 호"
+  }
+]

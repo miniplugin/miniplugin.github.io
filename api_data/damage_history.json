@@ -1,0 +1,520 @@
+[
+    {
+      "wlobscd": 1007604,
+      "wmwlc": 14,
+      "almwlc": 6,
+      "srswlc": 2,
+      "fhza": 335.84
+    },
+    {
+      "wlobscd": 1007605,
+      "wmwlc": 14,
+      "almwlc": 4,
+      "srswlc": 1,
+      "fhza": 728.18
+    },
+    {
+      "wlobscd": 1007615,
+      "wmwlc": 4,
+      "almwlc": 2,
+      "srswlc": 0,
+      "fhza": 490.48
+    },
+    {
+      "wlobscd": 1007617,
+      "wmwlc": 9,
+      "almwlc": 1,
+      "srswlc": 0,
+      "fhza": 795.38
+    },
+    {
+      "wlobscd": 1007625,
+      "wmwlc": 3,
+      "almwlc": 5,
+      "srswlc": 3,
+      "fhza": 332.26
+    },
+    {
+      "wlobscd": 1007635,
+      "wmwlc": 3,
+      "almwlc": 3,
+      "srswlc": 1,
+      "fhza": 459.72
+    },
+    {
+      "wlobscd": 1007640,
+      "wmwlc": 4,
+      "almwlc": 1,
+      "srswlc": 0,
+      "fhza": 696.79
+    },
+    {
+      "wlobscd": 1007645,
+      "wmwlc": 11,
+      "almwlc": 5,
+      "srswlc": 3,
+      "fhza": 883.24
+    },
+    {
+      "wlobscd": 1007650,
+      "wmwlc": 6,
+      "almwlc": 5,
+      "srswlc": 1,
+      "fhza": 632.85
+    },
+    {
+      "wlobscd": 1007655,
+      "wmwlc": 8,
+      "almwlc": 1,
+      "srswlc": 3,
+      "fhza": 622.15
+    },
+    {
+      "wlobscd": 1007660,
+      "wmwlc": 3,
+      "almwlc": 4,
+      "srswlc": 2,
+      "fhza": 272.31
+    },
+    {
+      "wlobscd": 1007680,
+      "wmwlc": 2,
+      "almwlc": 5,
+      "srswlc": 2,
+      "fhza": 828.14
+    },
+    {
+      "wlobscd": 1007685,
+      "wmwlc": 8,
+      "almwlc": 1,
+      "srswlc": 3,
+      "fhza": 332.63
+    },
+    {
+      "wlobscd": 1007690,
+      "wmwlc": 8,
+      "almwlc": 7,
+      "srswlc": 2,
+      "fhza": 116.92
+    },
+    {
+      "wlobscd": 1007697,
+      "wmwlc": 14,
+      "almwlc": 6,
+      "srswlc": 0,
+      "fhza": 618.51
+    },
+    {
+      "wlobscd": 1013655,
+      "wmwlc": 2,
+      "almwlc": 3,
+      "srswlc": 2,
+      "fhza": 798.72
+    },
+    {
+      "wlobscd": 1015644,
+      "wmwlc": 12,
+      "almwlc": 7,
+      "srswlc": 0,
+      "fhza": 76.11
+    },
+    {
+      "wlobscd": 1015645,
+      "wmwlc": 6,
+      "almwlc": 3,
+      "srswlc": 1,
+      "fhza": 768.65
+    },
+    {
+      "wlobscd": 1015680,
+      "wmwlc": 11,
+      "almwlc": 9,
+      "srswlc": 2,
+      "fhza": 485.44
+    },
+    {
+      "wlobscd": 1016607,
+      "wmwlc": 9,
+      "almwlc": 6,
+      "srswlc": 3,
+      "fhza": 240.68
+    },
+    {
+      "wlobscd": 1016650,
+      "wmwlc": 10,
+      "almwlc": 5,
+      "srswlc": 0,
+      "fhza": 292.31
+    },
+    {
+      "wlobscd": 1016660,
+      "wmwlc": 12,
+      "almwlc": 3,
+      "srswlc": 0,
+      "fhza": 720.97
+    },
+    {
+      "wlobscd": 1016670,
+      "wmwlc": 9,
+      "almwlc": 2,
+      "srswlc": 0,
+      "fhza": 591.03
+    },
+    {
+      "wlobscd": 1016695,
+      "wmwlc": 12,
+      "almwlc": 3,
+      "srswlc": 2,
+      "fhza": 401.35
+    },
+    {
+      "wlobscd": 1018610,
+      "wmwlc": 7,
+      "almwlc": 5,
+      "srswlc": 0,
+      "fhza": 649.14
+    },
+    {
+      "wlobscd": 1018620,
+      "wmwlc": 8,
+      "almwlc": 9,
+      "srswlc": 3,
+      "fhza": 382.84
+    },
+    {
+      "wlobscd": 1018623,
+      "wmwlc": 8,
+      "almwlc": 6,
+      "srswlc": 0,
+      "fhza": 712.12
+    },
+    {
+      "wlobscd": 1018625,
+      "wmwlc": 12,
+      "almwlc": 9,
+      "srswlc": 3,
+      "fhza": 461.55
+    },
+    {
+      "wlobscd": 1018630,
+      "wmwlc": 7,
+      "almwlc": 4,
+      "srswlc": 1,
+      "fhza": 153.68
+    },
+    {
+      "wlobscd": 1018635,
+      "wmwlc": 14,
+      "almwlc": 7,
+      "srswlc": 0,
+      "fhza": 226.11
+    },
+    {
+      "wlobscd": 1018638,
+      "wmwlc": 5,
+      "almwlc": 8,
+      "srswlc": 3,
+      "fhza": 671.9
+    },
+    {
+      "wlobscd": 1018640,
+      "wmwlc": 5,
+      "almwlc": 2,
+      "srswlc": 3,
+      "fhza": 310.25
+    },
+    {
+      "wlobscd": 1018650,
+      "wmwlc": 12,
+      "almwlc": 5,
+      "srswlc": 0,
+      "fhza": 350.19
+    },
+    {
+      "wlobscd": 1018655,
+      "wmwlc": 9,
+      "almwlc": 5,
+      "srswlc": 1,
+      "fhza": 750.46
+    },
+    {
+      "wlobscd": 1018658,
+      "wmwlc": 12,
+      "almwlc": 3,
+      "srswlc": 2,
+      "fhza": 236
+    },
+    {
+      "wlobscd": 1018662,
+      "wmwlc": 5,
+      "almwlc": 1,
+      "srswlc": 3,
+      "fhza": 593.79
+    },
+    {
+      "wlobscd": 1018665,
+      "wmwlc": 7,
+      "almwlc": 5,
+      "srswlc": 3,
+      "fhza": 499.43
+    },
+    {
+      "wlobscd": 1018669,
+      "wmwlc": 9,
+      "almwlc": 2,
+      "srswlc": 1,
+      "fhza": 795.18
+    },
+    {
+      "wlobscd": 1018670,
+      "wmwlc": 8,
+      "almwlc": 2,
+      "srswlc": 3,
+      "fhza": 376.27
+    },
+    {
+      "wlobscd": 1018675,
+      "wmwlc": 7,
+      "almwlc": 1,
+      "srswlc": 2,
+      "fhza": 374.75
+    },
+    {
+      "wlobscd": 1018680,
+      "wmwlc": 11,
+      "almwlc": 8,
+      "srswlc": 3,
+      "fhza": 306.03
+    },
+    {
+      "wlobscd": 1018683,
+      "wmwlc": 10,
+      "almwlc": 9,
+      "srswlc": 0,
+      "fhza": 823.69
+    },
+    {
+      "wlobscd": 1018690,
+      "wmwlc": 3,
+      "almwlc": 5,
+      "srswlc": 0,
+      "fhza": 291
+    },
+    {
+      "wlobscd": 1018692,
+      "wmwlc": 11,
+      "almwlc": 7,
+      "srswlc": 1,
+      "fhza": 266.35
+    },
+    {
+      "wlobscd": 1018693,
+      "wmwlc": 8,
+      "almwlc": 6,
+      "srswlc": 1,
+      "fhza": 469.05
+    },
+    {
+      "wlobscd": 1018695,
+      "wmwlc": 7,
+      "almwlc": 9,
+      "srswlc": 2,
+      "fhza": 124.41
+    },
+    {
+      "wlobscd": 1018697,
+      "wmwlc": 11,
+      "almwlc": 9,
+      "srswlc": 3,
+      "fhza": 849.71
+    },
+    {
+      "wlobscd": 1018698,
+      "wmwlc": 2,
+      "almwlc": 1,
+      "srswlc": 0,
+      "fhza": 933.6
+    },
+    {
+      "wlobscd": 1019620,
+      "wmwlc": 13,
+      "almwlc": 3,
+      "srswlc": 2,
+      "fhza": 797.86
+    },
+    {
+      "wlobscd": 1019630,
+      "wmwlc": 4,
+      "almwlc": 9,
+      "srswlc": 3,
+      "fhza": 949.82
+    },
+    {
+      "wlobscd": 1019675,
+      "wmwlc": 5,
+      "almwlc": 2,
+      "srswlc": 0,
+      "fhza": 469.22
+    },
+    {
+      "wlobscd": 1019680,
+      "wmwlc": 12,
+      "almwlc": 4,
+      "srswlc": 2,
+      "fhza": 466.98
+    },
+    {
+      "wlobscd": 1021680,
+      "wmwlc": 6,
+      "almwlc": 9,
+      "srswlc": 3,
+      "fhza": 858.43
+    },
+    {
+      "wlobscd": 1022640,
+      "wmwlc": 6,
+      "almwlc": 1,
+      "srswlc": 1,
+      "fhza": 275.63
+    },
+    {
+      "wlobscd": 1022648,
+      "wmwlc": 5,
+      "almwlc": 2,
+      "srswlc": 1,
+      "fhza": 162.45
+    },
+    {
+      "wlobscd": 1022650,
+      "wmwlc": 3,
+      "almwlc": 5,
+      "srswlc": 0,
+      "fhza": 522.59
+    },
+    {
+      "wlobscd": 1022662,
+      "wmwlc": 9,
+      "almwlc": 4,
+      "srswlc": 0,
+      "fhza": 683.63
+    },
+    {
+      "wlobscd": 1022668,
+      "wmwlc": 10,
+      "almwlc": 5,
+      "srswlc": 0,
+      "fhza": 508.37
+    },
+    {
+      "wlobscd": 1022670,
+      "wmwlc": 4,
+      "almwlc": 1,
+      "srswlc": 0,
+      "fhza": 396.53
+    },
+    {
+      "wlobscd": 1022680,
+      "wmwlc": 13,
+      "almwlc": 3,
+      "srswlc": 0,
+      "fhza": 94.78
+    },
+    {
+      "wlobscd": 1023640,
+      "wmwlc": 12,
+      "almwlc": 8,
+      "srswlc": 0,
+      "fhza": 620.02
+    },
+    {
+      "wlobscd": 1023660,
+      "wmwlc": 10,
+      "almwlc": 1,
+      "srswlc": 2,
+      "fhza": 730.43
+    },
+    {
+      "wlobscd": 1023662,
+      "wmwlc": 5,
+      "almwlc": 4,
+      "srswlc": 2,
+      "fhza": 880.7
+    },
+    {
+      "wlobscd": 1023680,
+      "wmwlc": 5,
+      "almwlc": 1,
+      "srswlc": 1,
+      "fhza": 381.05
+    },
+    {
+      "wlobscd": 1101605,
+      "wmwlc": 13,
+      "almwlc": 4,
+      "srswlc": 0,
+      "fhza": 495.55
+    },
+    {
+      "wlobscd": 1101610,
+      "wmwlc": 2,
+      "almwlc": 6,
+      "srswlc": 0,
+      "fhza": 317.36
+    },
+    {
+      "wlobscd": 1101620,
+      "wmwlc": 11,
+      "almwlc": 8,
+      "srswlc": 2,
+      "fhza": 305.08
+    },
+    {
+      "wlobscd": 1101635,
+      "wmwlc": 11,
+      "almwlc": 8,
+      "srswlc": 1,
+      "fhza": 688.18
+    },
+    {
+      "wlobscd": 1101645,
+      "wmwlc": 12,
+      "almwlc": 7,
+      "srswlc": 3,
+      "fhza": 487.17
+    },
+    {
+      "wlobscd": 1101650,
+      "wmwlc": 4,
+      "almwlc": 5,
+      "srswlc": 2,
+      "fhza": 386.44
+    },
+    {
+      "wlobscd": 1101663,
+      "wmwlc": 3,
+      "almwlc": 2,
+      "srswlc": 1,
+      "fhza": 753.28
+    },
+    {
+      "wlobscd": 1101665,
+      "wmwlc": 6,
+      "almwlc": 6,
+      "srswlc": 1,
+      "fhza": 658.66
+    },
+    {
+      "wlobscd": 1101670,
+      "wmwlc": 3,
+      "almwlc": 7,
+      "srswlc": 3,
+      "fhza": 267.63
+    },
+    {
+      "wlobscd": 1101680,
+      "wmwlc": 3,
+      "almwlc": 1,
+      "srswlc": 2,
+      "fhza": 155.71
+    }
+  ]
