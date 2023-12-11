@@ -1,0 +1,74 @@
+[
+  {
+    "cigugun": "청담동",
+    "river": "한강-04",
+    "fhza": 28740000.1,
+    "wmwlc": 2,
+    "almwlc": 1,
+    "srswlc": 0
+  },
+  {
+    "cigugun": "적동리",
+    "river": "서천",
+    "fhza": 3050000.0,
+    "wmwlc": 2,
+    "almwlc": 2,
+    "srswlc": 1
+  },
+  {
+    "cigugun": "대치교",
+    "river": "한강-04",
+    "fhza": 6730000,
+    "wmwlc": 3,
+    "almwlc": 3,
+    "srswlc": 2
+  },
+  {
+    "cigugun": "세곡동",
+    "river": "한강-03",
+    "fhza": 6370000.0,
+    "wmwlc": 3,
+    "almwlc": 2,
+    "srswlc": 2
+  },
+  {
+    "cigugun": "월계동",
+    "river": "중랑천",
+    "fhza": 14940000.0,
+    "wmwlc": 2,
+    "almwlc": 2,
+    "srswlc": 1
+  },
+  {
+    "cigugun": "창동교",
+    "river": "원평천",
+    "fhza": 42000000.0,
+    "wmwlc": 2,
+    "almwlc": 1,
+    "srswlc": 0
+  },
+  {
+    "cigugun": "중화동",
+    "river": "중랑천",
+    "fhza": 22000000.0,
+    "wmwlc": 2,
+    "almwlc": 2,
+    "srswlc": 2
+  },
+  {
+    "cigugun": "노량진동",
+    "river": "한강-06",
+    "fhza": 32000000.0,
+    "wmwlc": 3,
+    "almwlc": 2,
+    "srswlc": 1
+  },
+  {
+    "cigugun": "서빙고동",
+    "river": "한강-05",
+    "fhza": 12000000.0,
+    "wmwlc": 2,
+    "almwlc": 0,
+    "srswlc": 0
+  }
+]
